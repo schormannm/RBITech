@@ -266,7 +266,11 @@ public class ReadOldData
 								fltVal = Float.parseFloat(rawVal);
 							statement.setFloat(j, fltVal);
 							break;
-						case "checkbox":
+						case "checkbox": // to deal with checkbox type
+											// functionality
+							break;
+						case "radio": // to deal with radio-button type
+										// functionality
 							break;
 						default:
 						}
@@ -275,11 +279,11 @@ public class ReadOldData
 
 				System.out.println(statement.toString());
 
-				// int rowsInserted = statement.executeUpdate();
-				// if (rowsInserted > 0)
-				// {
-				// System.out.println("A new record was inserted successfully!");
-				// }
+				int rowsInserted = statement.executeUpdate();
+				if (rowsInserted > 0)
+					{
+					System.out.println("A new record was inserted successfully!");
+					}
 				}
 			}
 		catch (SQLException e)
@@ -318,20 +322,12 @@ public class ReadOldData
 				}
 			else
 				{
-				String sqlInsert;
+				int rowsInserted = insertLUTValue(con, c, rawVal);
 
-				System.out.println("Insert new value " + rawVal + " into the LUT " + c.LUT);
-
-				sqlInsert = "INSERT INTO " + c.LUT + " (" + c.LUTField + ") VALUES ('" + rawVal + "')";
-
-				PreparedStatement statement = con.prepareStatement(sqlInsert);
-
-				System.out.println(statement.toString());
-
-				int rowsInserted = statement.executeUpdate();
 				if (rowsInserted > 0)
 					{
 					System.out.println("A record was inserted successfully!");
+					retVal = getLUTIndex(con, c, rawVal);
 					}
 
 				}
@@ -343,6 +339,29 @@ public class ReadOldData
 			e.printStackTrace();
 			}
 		return retVal;
+		}
+
+	/**
+	 * @param con
+	 * @param c
+	 * @param rawVal
+	 * @return
+	 * @throws SQLException
+	 */
+	private static int insertLUTValue(Connection con, Converter c, String rawVal) throws SQLException
+		{
+		String sqlInsert;
+
+		System.out.println("Insert new value " + rawVal + " into the LUT " + c.LUT);
+
+		sqlInsert = "INSERT INTO " + c.LUT + " (" + c.LUTField + ") VALUES ('" + rawVal + "')";
+
+		PreparedStatement statement = con.prepareStatement(sqlInsert);
+
+		System.out.println(statement.toString());
+
+		int rowsInserted = statement.executeUpdate();
+		return rowsInserted;
 		}
 
 	/**
@@ -481,6 +500,7 @@ public class ReadOldData
 		while (c.Order == table_id && inc_index < (cList.size()) - 1)
 			{
 			c = getConverter(cList, inc_index);
+
 			sqlFieldList = sqlFieldList + c.getDestinationField() + ", ";
 			inc_index++;
 			c = getConverter(cList, inc_index);
