@@ -402,7 +402,7 @@ public class ReadOldData
 	 * @return Converter
 	 * 
 	 *         This will return a converter object from the cList ArrayList for
-	 *         a given index
+	 *         a given index...
 	 * 
 	 */
 	private static Converter getConverter(ArrayList<Converter> cList, int index)
