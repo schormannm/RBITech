@@ -217,6 +217,7 @@ public class ReadOldData
 				for (int j = 1; j < number_of_values + 1; j++)
 					{
 					// ArrayList<String> arr = table.get(k - 1);
+
 					String rawVal;
 					Converter c;
 
