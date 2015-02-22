@@ -318,19 +318,23 @@ public class ReadOldData
 				}
 			else
 				{
-				System.out.println("We need to insert something into the LUT");
+				String sqlInsert;
+
+				System.out.println("Insert new value " + rawVal + " into the LUT " + c.LUT);
+
+				sqlInsert = "INSERT INTO " + c.LUT + " (" + c.LUTField + ") VALUES ('" + rawVal + "')";
+
+				PreparedStatement statement = con.prepareStatement(sqlInsert);
+
+				System.out.println(statement.toString());
+
+				int rowsInserted = statement.executeUpdate();
+				if (rowsInserted > 0)
+					{
+					System.out.println("A record was inserted successfully!");
+					}
+
 				}
-
-			// PreparedStatement statement =
-			// con.prepareStatement(sql);
-
-			// System.out.println(statement.toString());
-
-			// int rowsFound = statement.executeUpdate();
-			// if (rowsFound > 0)
-			// {
-			// System.out.println("A record was found and matched successfully!");
-			// }
 
 			}
 		catch (SQLException e)
