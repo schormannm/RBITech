@@ -47,6 +47,7 @@ public class ReadOldData
 
 		processInspectionData(sourcefilename, cList);
 
+		System.out.println("Program successfully completed.");
 		}
 
 	/**
@@ -66,12 +67,24 @@ public class ReadOldData
 		System.out.println("================================================================================");
 		}
 
+	private static void showParentList(ArrayList<Parent> pList)
+		{
+		Parent p;
+		for (int i = 0; i < pList.size(); i++)
+			{
+			p = getParent(pList, i);
+			showParent(p);
+			}
+		System.out.println("================================================================================");
+		}
+
 	/**
 	 * @param c
 	 */
 	private static void showConverter(Converter c)
 		{
-		System.out.println(c.getSSFieldName() + " : " + c.getRow() + " : " + c.getColumn() + " : " + c.getSSFieldType());
+		System.out.println(c.getSSFieldName() + " : " + c.getRow() + " : " + c.getColumn() + " : " + c.getDestinationTable()
+				+ " : " + c.getDestinationParent() + " : " + c.getDestinationParentField());
 		}
 
 	/**
@@ -79,7 +92,8 @@ public class ReadOldData
 	 */
 	private static void showParent(Parent p)
 		{
-		System.out.println("Parent : " + p.getTableID() + " : " + p.getParentTableID() + " : " + p.getDbIndex());
+		if (p != null)
+			System.out.println("Parent : " + p.getTableID() + " : " + p.getParentTableID() + " : " + p.getDbIndex());
 		}
 
 	private static ArrayList<Converter> getConverterData(String converterfilename)
@@ -132,6 +146,8 @@ public class ReadOldData
 					readDTable, readDField, readDType, readLUT, readLUTField, readLUTKey, readDParent, readDPIndexField);
 
 			cList.add(c);
+
+			showConverter(c);
 
 			}
 
@@ -233,6 +249,7 @@ public class ReadOldData
 		ArrayList<Parent> pList;
 
 		pList = initParentList(cList);
+		showParentList(pList);
 
 		max_table_id = getMaxTableId(cList);
 
@@ -242,6 +259,7 @@ public class ReadOldData
 			index = new_index;
 			table_id++;
 			}
+		showParentList(pList);
 		}
 
 	private static int storeDataInTable(int table_id, Connection con, ArrayList<Converter> cList, int index, HSSFSheet sheet,
@@ -254,33 +272,35 @@ public class ReadOldData
 
 		sql = constructSQLInsertQuery(table_id, cList, index);
 
-		// System.out.println(sql);
+		System.out.println(sql);
 
 		number_of_values = getNumberOfTableItems(table_id, cList, index);
 
 		getInspectionData(cList, index, sheet, number_of_values, table);
 
-		Parent p = getParent(pList, table_id);
+		Parent p = getParent(pList, table_id - 1);
 
 		showParent(p);
 
 		try
 			{
-			PreparedStatement statement = con.prepareStatement(sql);
+			PreparedStatement statement = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+
+			statement.setInt(1, (int) getParentIndex(table_id, pList));
 
 			int list_depth = table.get(0).size();
 
 			for (int k = 1; k < list_depth + 1; k++)
 				{
-				for (int j = 1; j < number_of_values + 1; j++)
+				for (int j = 2; j < number_of_values + 2; j++)
 					{
-					String rawVal;
 					Converter c;
+					String rawVal;
 
-					rawVal = table.get(j - 1).get(k - 1);
+					rawVal = table.get(j - 2).get(k - 1);
 					rawVal = rawVal.trim();
 
-					c = getConverter(cList, index + j - 1);
+					c = getConverter(cList, index + j - 2);
 
 					// showConverter(c);
 
@@ -337,7 +357,24 @@ public class ReadOldData
 				int rowsInserted = statement.executeUpdate();
 				if (rowsInserted > 0)
 					{
-					System.out.println("A new record was inserted successfully!");
+					ResultSet rs = statement.getGeneratedKeys();
+
+					if (rs.next())
+						{
+						int autoIncKey = rs.getInt(1);
+						System.out.println("Got key successfully : " + autoIncKey);
+						p.setDbIndex(autoIncKey);
+						}
+					else
+						{
+						System.out.println("PROBLEM - did not get key for some reason!!!!!!");
+						// should probably also throw an exception from here
+						}
+
+					rs.close();
+					rs = null;
+
+					System.out.println("A new record was inserted successfully into table");
 					}
 				}
 			}
@@ -353,6 +390,18 @@ public class ReadOldData
 		new_index = index + number_of_values;
 
 		return new_index;
+		}
+
+	private static long getParentIndex(int tableID, ArrayList<Parent> pList)
+		{
+		long parentDBIndex;
+
+		Parent p = getParent(pList, tableID);
+		Parent up = getParent(pList, p.ParentTableID);
+
+		parentDBIndex = up.dbIndex;
+
+		return parentDBIndex;
 		}
 
 	private static int getLUTIndex(Connection con, Converter c, String rawVal)
@@ -488,7 +537,10 @@ public class ReadOldData
 	private static Parent getParent(ArrayList<Parent> pList, int index)
 		{
 		Parent p;
-		p = pList.get(index);
+		if (index < pList.size())
+			p = pList.get(index);
+		else
+			p = null;
 		return p;
 		}
 
@@ -557,6 +609,9 @@ public class ReadOldData
 		int inc_index = index;
 
 		c = getConverter(cList, inc_index);
+
+		sqlFieldList = c.DestinationTable + "_id,";
+
 		while (c.Order == table_id && inc_index < (cList.size()) - 1)
 			{
 			c = getConverter(cList, inc_index);
@@ -614,7 +669,7 @@ public class ReadOldData
 		String sqlValueList;
 		sqlValueList = ") VALUES (";
 
-		for (int i = 0; i < number_of_values; i++)
+		for (int i = 0; i < number_of_values + 1; i++)
 			{
 			sqlValueList = sqlValueList + "?,";
 			}
