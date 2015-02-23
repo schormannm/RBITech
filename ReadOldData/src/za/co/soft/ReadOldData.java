@@ -74,6 +74,14 @@ public class ReadOldData
 		System.out.println(c.getSSFieldName() + " : " + c.getRow() + " : " + c.getColumn() + " : " + c.getSSFieldType());
 		}
 
+	/**
+	 * @param c
+	 */
+	private static void showParent(Parent p)
+		{
+		System.out.println("Parent : " + p.getTableID() + " : " + p.getParentTableID() + " : " + p.getDbIndex());
+		}
+
 	private static ArrayList<Converter> getConverterData(String converterfilename)
 		{
 		XSSFSheet sheet;
@@ -117,11 +125,11 @@ public class ReadOldData
 			String readLUT = getCellValueStr(row, 9);
 			String readLUTField = getCellValueStr(row, 10);
 			String readLUTKey = getCellValueStr(row, 11);
-			String readDParent = getCellValueStr(row, 12);
-			String readDParentField = getCellValueStr(row, 13);
+			Integer readDParent = getCellValueInt(row, 12);
+			String readDPIndexField = getCellValueStr(row, 13);
 
 			Converter c = new Converter(readRow, readColumn, readSSFieldName, readSSFieldType, readProcessing, readSort,
-					readDTable, readDField, readDType, readLUT, readLUTField, readLUTKey, readDParent, readDParentField);
+					readDTable, readDField, readDType, readLUT, readLUTField, readLUTKey, readDParent, readDPIndexField);
 
 			cList.add(c);
 
@@ -189,25 +197,55 @@ public class ReadOldData
 		return max_table_id;
 		}
 
+	private static ArrayList<Parent> initParentList(ArrayList<Converter> cList)
+		{
+		int max_table_id;
+		int table_id = 1;
+		int index = 0;
+		Converter c;
+
+		ArrayList<Parent> pList = new ArrayList<Parent>();
+
+		max_table_id = getMaxTableId(cList);
+
+		while (table_id < max_table_id + 1)
+			{
+
+			Parent parent = new Parent();
+			parent.TableID = table_id;
+			c = getConverter(cList, index);
+			parent.ParentTableID = c.DestinationParent;
+			pList.add(parent);
+
+			index = index + getNumberOfTableItems(table_id, cList, index);
+			table_id++;
+			}
+
+		return pList;
+		}
+
 	private static void storeDataInDB(Connection con, ArrayList<Converter> cList, HSSFSheet sheet)
 		{
 		int table_id = 1;
 		int new_index;
 		int index = 0;
 		int max_table_id;
-		Converter c;
+		ArrayList<Parent> pList;
+
+		pList = initParentList(cList);
 
 		max_table_id = getMaxTableId(cList);
 
 		while (table_id < max_table_id + 1)
 			{
-			new_index = storeDataInTable(table_id, con, cList, index, sheet);
+			new_index = storeDataInTable(table_id, con, cList, index, sheet, pList);
 			index = new_index;
 			table_id++;
 			}
 		}
 
-	private static int storeDataInTable(int table_id, Connection con, ArrayList<Converter> cList, int index, HSSFSheet sheet)
+	private static int storeDataInTable(int table_id, Connection con, ArrayList<Converter> cList, int index, HSSFSheet sheet,
+			ArrayList<Parent> pList)
 		{
 		int new_index;
 		Integer number_of_values = 0;
@@ -222,6 +260,10 @@ public class ReadOldData
 
 		getInspectionData(cList, index, sheet, number_of_values, table);
 
+		Parent p = getParent(pList, table_id);
+
+		showParent(p);
+
 		try
 			{
 			PreparedStatement statement = con.prepareStatement(sql);
@@ -232,18 +274,15 @@ public class ReadOldData
 				{
 				for (int j = 1; j < number_of_values + 1; j++)
 					{
-					// ArrayList<String> arr = table.get(k - 1);
-
 					String rawVal;
 					Converter c;
 
 					rawVal = table.get(j - 1).get(k - 1);
-
 					rawVal = rawVal.trim();
 
 					c = getConverter(cList, index + j - 1);
 
-					showConverter(c);
+					// showConverter(c);
 
 					switch (c.DesinationType.toLowerCase())
 						{
@@ -446,6 +485,13 @@ public class ReadOldData
 		return c;
 		}
 
+	private static Parent getParent(ArrayList<Parent> pList, int index)
+		{
+		Parent p;
+		p = pList.get(index);
+		return p;
+		}
+
 	private static dataFormatType getDataFormat(Converter c)
 		{
 		dataFormatType dataFormat = dataFormatType.SINGLE;
@@ -609,7 +655,7 @@ public class ReadOldData
 		data_row = c.getRow();
 		data_column = c.getColumn();
 
-		System.out.println("Max depth : " + max_depth);
+		// System.out.println("Max depth : " + max_depth);
 
 		for (int i = 0; i < max_depth; i++)
 			{
@@ -665,7 +711,7 @@ public class ReadOldData
 		data_row = c.getRow();
 		data_column = c.getColumn();
 
-		System.out.println("Max depth : " + max_depth);
+		// System.out.println("Max depth : " + max_depth);
 
 		for (int i = 0; i < max_depth; i++)
 			{

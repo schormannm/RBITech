@@ -15,8 +15,8 @@ public class Converter
 	String	LUT;
 	String	LUTField;
 	String	LUTKey;
-	String	DestinationParent;
-	String	DestinationParentField;
+	int		DestinationParent;
+	String	DestinationPIndexField;
 
 	/**
 	 * @param row
@@ -33,7 +33,7 @@ public class Converter
 	 */
 	public Converter(int row, int column, String sSFieldName, String sSFieldType, String processing, Integer order,
 			String destinationTable, String destinationField, String desinationType, String lUT, String lUTField, String lUTKey,
-			String destinationParent, String destinationParentField)
+			int destinationParent, String destinationPIndexField)
 		{
 		super();
 		this.row = row;
@@ -43,7 +43,7 @@ public class Converter
 		Processing = processing;
 		Order = order;
 		DestinationParent = destinationParent;
-		DestinationParentField = destinationParentField;
+		DestinationPIndexField = destinationPIndexField;
 		DestinationTable = destinationTable;
 		DestinationField = destinationField;
 		DesinationType = desinationType;
@@ -53,11 +53,29 @@ public class Converter
 		}
 
 	/**
+	 * @param order
+	 *            the order to set
+	 */
+	public void setOrder(int order)
+		{
+		Order = order;
+		}
+
+	/**
+	 * @param destinationParent
+	 *            the destinationParent to set
+	 */
+	public void setDestinationParent(int destinationParent)
+		{
+		DestinationParent = destinationParent;
+		}
+
+	/**
 	 * @return the destinationParentField
 	 */
 	public String getDestinationParentField()
 		{
-		return DestinationParentField;
+		return DestinationPIndexField;
 		}
 
 	/**
@@ -66,24 +84,15 @@ public class Converter
 	 */
 	public void setDestinationParentField(String destinationParentField)
 		{
-		DestinationParentField = destinationParentField;
+		DestinationPIndexField = destinationParentField;
 		}
 
 	/**
 	 * @return the destinationParent
 	 */
-	public String getDestinationParent()
+	public int getDestinationParent()
 		{
 		return DestinationParent;
-		}
-
-	/**
-	 * @param destinationParent
-	 *            the destinationParent to set
-	 */
-	public void setDestinationParent(String destinationParent)
-		{
-		DestinationParent = destinationParent;
 		}
 
 	/**
