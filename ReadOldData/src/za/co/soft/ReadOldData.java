@@ -117,9 +117,11 @@ public class ReadOldData
 			String readLUT = getCellValueStr(row, 9);
 			String readLUTField = getCellValueStr(row, 10);
 			String readLUTKey = getCellValueStr(row, 11);
+			String readDParent = getCellValueStr(row, 12);
+			String readDParentField = getCellValueStr(row, 13);
 
 			Converter c = new Converter(readRow, readColumn, readSSFieldName, readSSFieldType, readProcessing, readSort,
-					readDTable, readDField, readDType, readLUT, readLUTField, readLUTKey);
+					readDTable, readDField, readDType, readLUT, readLUTField, readLUTKey, readDParent, readDParentField);
 
 			cList.add(c);
 
@@ -139,6 +141,7 @@ public class ReadOldData
 
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			sheet = workbook.getSheetAt(0);
+			workbook.close();
 
 			}
 		catch (Exception e)
@@ -292,7 +295,6 @@ public class ReadOldData
 			}
 		catch (ParseException e)
 			{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			}
 
@@ -335,7 +337,6 @@ public class ReadOldData
 			}
 		catch (SQLException e)
 			{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			}
 		return retVal;
@@ -802,6 +803,7 @@ public class ReadOldData
 
 			HSSFWorkbook workbook = new HSSFWorkbook(file);
 			sheet = workbook.getSheetAt(0);
+			workbook.close();
 
 			}
 		catch (Exception e)

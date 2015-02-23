@@ -3,236 +3,291 @@ package za.co.soft;
 public class Converter
 	{
 
-		int row;
-		int column;
-		String SSFieldName;
-		String SSFieldType;
-		String Processing;
-		int Order;
-		String DestinationTable;
-		String DestinationField;
-		String DesinationType;
-		String LUT;
-		String LUTField;
-		String LUTKey;
+	int		row;
+	int		column;
+	String	SSFieldName;
+	String	SSFieldType;
+	String	Processing;
+	int		Order;
+	String	DestinationTable;
+	String	DestinationField;
+	String	DesinationType;
+	String	LUT;
+	String	LUTField;
+	String	LUTKey;
+	String	DestinationParent;
+	String	DestinationParentField;
 
-		/**
-		 * @param row
-		 * @param column
-		 * @param sSFieldName
-		 * @param sSFieldType
-		 * @param processing
-		 * @param order
-		 * @param destinationTable
-		 * @param destinationField
-		 * @param desinationType
-		 * @param lUT
-		 * @param lUTField
-		 */
-		public Converter(int row, int column, String sSFieldName, String sSFieldType, String processing,
-				Integer order, String destinationTable, String destinationField, String desinationType,
-				String lUT, String lUTField, String lUTKey)
-			{
-				super();
-				this.row = row;
-				this.column = column;
-				SSFieldName = sSFieldName;
-				SSFieldType = sSFieldType;
-				Processing = processing;
-				Order = order;
-				DestinationTable = destinationTable;
-				DestinationField = destinationField;
-				DesinationType = desinationType;
-				LUT = lUT;
-				LUTField = lUTField;
-				LUTKey = lUTKey;
-			}
+	/**
+	 * @param row
+	 * @param column
+	 * @param sSFieldName
+	 * @param sSFieldType
+	 * @param processing
+	 * @param order
+	 * @param destinationTable
+	 * @param destinationField
+	 * @param desinationType
+	 * @param lUT
+	 * @param lUTField
+	 */
+	public Converter(int row, int column, String sSFieldName, String sSFieldType, String processing, Integer order,
+			String destinationTable, String destinationField, String desinationType, String lUT, String lUTField, String lUTKey,
+			String destinationParent, String destinationParentField)
+		{
+		super();
+		this.row = row;
+		this.column = column;
+		SSFieldName = sSFieldName;
+		SSFieldType = sSFieldType;
+		Processing = processing;
+		Order = order;
+		DestinationParent = destinationParent;
+		DestinationParentField = destinationParentField;
+		DestinationTable = destinationTable;
+		DestinationField = destinationField;
+		DesinationType = desinationType;
+		LUT = lUT;
+		LUTField = lUTField;
+		LUTKey = lUTKey;
+		}
 
-		/**
-		 * @return the row
-		 */
-		public int getRow()
-			{
-				return row;
-			}
+	/**
+	 * @return the destinationParentField
+	 */
+	public String getDestinationParentField()
+		{
+		return DestinationParentField;
+		}
 
-		/**
-		 * @param row
-		 *            the row to set
-		 */
-		public void setRow(int row)
-			{
-				this.row = row;
-			}
+	/**
+	 * @param destinationParentField
+	 *            the destinationParentField to set
+	 */
+	public void setDestinationParentField(String destinationParentField)
+		{
+		DestinationParentField = destinationParentField;
+		}
 
-		/**
-		 * @return the column
-		 */
-		public int getColumn()
-			{
-				return column;
-			}
+	/**
+	 * @return the destinationParent
+	 */
+	public String getDestinationParent()
+		{
+		return DestinationParent;
+		}
 
-		/**
-		 * @param column
-		 *            the column to set
-		 */
-		public void setColumn(int column)
-			{
-				this.column = column;
-			}
+	/**
+	 * @param destinationParent
+	 *            the destinationParent to set
+	 */
+	public void setDestinationParent(String destinationParent)
+		{
+		DestinationParent = destinationParent;
+		}
 
-		/**
-		 * @return the sSFieldName
-		 */
-		public String getSSFieldName()
-			{
-				return SSFieldName;
-			}
+	/**
+	 * @return the lUTKey
+	 */
+	public String getLUTKey()
+		{
+		return LUTKey;
+		}
 
-		/**
-		 * @param sSFieldName
-		 *            the sSFieldName to set
-		 */
-		public void setSSFieldName(String sSFieldName)
-			{
-				SSFieldName = sSFieldName;
-			}
+	/**
+	 * @param lUTKey
+	 *            the lUTKey to set
+	 */
+	public void setLUTKey(String lUTKey)
+		{
+		LUTKey = lUTKey;
+		}
 
-		/**
-		 * @return the sSFieldType
-		 */
-		public String getSSFieldType()
-			{
-				return SSFieldType;
-			}
+	/**
+	 * @return the row
+	 */
+	public int getRow()
+		{
+		return row;
+		}
 
-		/**
-		 * @param sSFieldType
-		 *            the sSFieldType to set
-		 */
-		public void setSSFieldType(String sSFieldType)
-			{
-				SSFieldType = sSFieldType;
-			}
+	/**
+	 * @param row
+	 *            the row to set
+	 */
+	public void setRow(int row)
+		{
+		this.row = row;
+		}
 
-		/**
-		 * @return the processing
-		 */
-		public String getProcessing()
-			{
-				return Processing;
-			}
+	/**
+	 * @return the column
+	 */
+	public int getColumn()
+		{
+		return column;
+		}
 
-		/**
-		 * @param processing
-		 *            the processing to set
-		 */
-		public void setProcessing(String processing)
-			{
-				Processing = processing;
-			}
+	/**
+	 * @param column
+	 *            the column to set
+	 */
+	public void setColumn(int column)
+		{
+		this.column = column;
+		}
 
-		/**
-		 * @return the order
-		 */
-		public Integer getOrder()
-			{
-				return Order;
-			}
+	/**
+	 * @return the sSFieldName
+	 */
+	public String getSSFieldName()
+		{
+		return SSFieldName;
+		}
 
-		/**
-		 * @param order
-		 *            the order to set
-		 */
-		public void setOrder(Integer order)
-			{
-				Order = order;
-			}
+	/**
+	 * @param sSFieldName
+	 *            the sSFieldName to set
+	 */
+	public void setSSFieldName(String sSFieldName)
+		{
+		SSFieldName = sSFieldName;
+		}
 
-		/**
-		 * @return the destinationTable
-		 */
-		public String getDestinationTable()
-			{
-				return DestinationTable;
-			}
+	/**
+	 * @return the sSFieldType
+	 */
+	public String getSSFieldType()
+		{
+		return SSFieldType;
+		}
 
-		/**
-		 * @param destinationTable
-		 *            the destinationTable to set
-		 */
-		public void setDestinationTable(String destinationTable)
-			{
-				DestinationTable = destinationTable;
-			}
+	/**
+	 * @param sSFieldType
+	 *            the sSFieldType to set
+	 */
+	public void setSSFieldType(String sSFieldType)
+		{
+		SSFieldType = sSFieldType;
+		}
 
-		/**
-		 * @return the destinationField
-		 */
-		public String getDestinationField()
-			{
-				return DestinationField;
-			}
+	/**
+	 * @return the processing
+	 */
+	public String getProcessing()
+		{
+		return Processing;
+		}
 
-		/**
-		 * @param destinationField
-		 *            the destinationField to set
-		 */
-		public void setDestinationField(String destinationField)
-			{
-				DestinationField = destinationField;
-			}
+	/**
+	 * @param processing
+	 *            the processing to set
+	 */
+	public void setProcessing(String processing)
+		{
+		Processing = processing;
+		}
 
-		/**
-		 * @return the desinationType
-		 */
-		public String getDesinationType()
-			{
-				return DesinationType;
-			}
+	/**
+	 * @return the order
+	 */
+	public Integer getOrder()
+		{
+		return Order;
+		}
 
-		/**
-		 * @param desinationType
-		 *            the desinationType to set
-		 */
-		public void setDesinationType(String desinationType)
-			{
-				DesinationType = desinationType;
-			}
+	/**
+	 * @param order
+	 *            the order to set
+	 */
+	public void setOrder(Integer order)
+		{
+		Order = order;
+		}
 
-		/**
-		 * @return the lUT
-		 */
-		public String getLUT()
-			{
-				return LUT;
-			}
+	/**
+	 * @return the destinationTable
+	 */
+	public String getDestinationTable()
+		{
+		return DestinationTable;
+		}
 
-		/**
-		 * @param lUT
-		 *            the lUT to set
-		 */
-		public void setLUT(String lUT)
-			{
-				LUT = lUT;
-			}
+	/**
+	 * @param destinationTable
+	 *            the destinationTable to set
+	 */
+	public void setDestinationTable(String destinationTable)
+		{
+		DestinationTable = destinationTable;
+		}
 
-		/**
-		 * @return the lUTField
-		 */
-		public String getLUTField()
-			{
-				return LUTField;
-			}
+	/**
+	 * @return the destinationField
+	 */
+	public String getDestinationField()
+		{
+		return DestinationField;
+		}
 
-		/**
-		 * @param lUTField
-		 *            the lUTField to set
-		 */
-		public void setLUTField(String lUTField)
-			{
-				LUTField = lUTField;
-			}
+	/**
+	 * @param destinationField
+	 *            the destinationField to set
+	 */
+	public void setDestinationField(String destinationField)
+		{
+		DestinationField = destinationField;
+		}
+
+	/**
+	 * @return the desinationType
+	 */
+	public String getDesinationType()
+		{
+		return DesinationType;
+		}
+
+	/**
+	 * @param desinationType
+	 *            the desinationType to set
+	 */
+	public void setDesinationType(String desinationType)
+		{
+		DesinationType = desinationType;
+		}
+
+	/**
+	 * @return the lUT
+	 */
+	public String getLUT()
+		{
+		return LUT;
+		}
+
+	/**
+	 * @param lUT
+	 *            the lUT to set
+	 */
+	public void setLUT(String lUT)
+		{
+		LUT = lUT;
+		}
+
+	/**
+	 * @return the lUTField
+	 */
+	public String getLUTField()
+		{
+		return LUTField;
+		}
+
+	/**
+	 * @param lUTField
+	 *            the lUTField to set
+	 */
+	public void setLUTField(String lUTField)
+		{
+		LUTField = lUTField;
+		}
 
 	}
