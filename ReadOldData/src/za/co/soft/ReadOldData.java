@@ -175,6 +175,20 @@ public class ReadOldData
 
 		}
 
+	/**
+	 * @param cList
+	 * @return
+	 */
+	private static int getMaxTableId(ArrayList<Converter> cList)
+		{
+		int max_table_id;
+		Converter c;
+		c = getConverter(cList, cList.size() - 2); // Get the last converter in
+													// the list
+		max_table_id = c.Order; // Order of the last will be the max
+		return max_table_id;
+		}
+
 	private static void storeDataInDB(Connection con, ArrayList<Converter> cList, HSSFSheet sheet)
 		{
 		int table_id = 1;
@@ -183,8 +197,7 @@ public class ReadOldData
 		int max_table_id;
 		Converter c;
 
-		c = getConverter(cList, cList.size() - 2);
-		max_table_id = c.Order;
+		max_table_id = getMaxTableId(cList);
 
 		while (table_id < max_table_id + 1)
 			{
