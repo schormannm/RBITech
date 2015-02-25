@@ -67,13 +67,13 @@ public class ReadOldData
 		System.out.println("================================================================================");
 		}
 
-	private static void showParentList(ArrayList<Parent> pList)
+	private static void showPNodeList(ArrayList<PNode> pList)
 		{
-		Parent p;
+		PNode p;
 		for (int i = 0; i < pList.size(); i++)
 			{
-			p = getParent(pList, i);
-			showParent(p);
+			p = getPNode(pList, i);
+			showPNode(p);
 			}
 		System.out.println("================================================================================");
 		}
@@ -84,16 +84,16 @@ public class ReadOldData
 	private static void showConverter(Converter c)
 		{
 		System.out.println(c.getSSFieldName() + " : " + c.getRow() + " : " + c.getColumn() + " : " + c.getDestinationTable()
-				+ " : " + c.getDestinationParent() + " : " + c.getDestinationParentField());
+				+ " : " + c.getDestinationPNode() + " : " + c.getDestinationParentField());
 		}
 
 	/**
 	 * @param c
 	 */
-	private static void showParent(Parent p)
+	private static void showPNode(PNode p)
 		{
 		if (p != null)
-			System.out.println("Parent : " + p.getTableID() + " : " + p.getParentTableID() + " : " + p.getDbIndex());
+			System.out.println("PNode : " + p.getTableID() + " : " + p.getPNodeTableID() + " : " + p.getDbIndex());
 		}
 
 	private static ArrayList<Converter> getConverterData(String converterfilename)
@@ -139,15 +139,15 @@ public class ReadOldData
 			String readLUT = getCellValueStr(row, 9);
 			String readLUTField = getCellValueStr(row, 10);
 			String readLUTKey = getCellValueStr(row, 11);
-			Integer readDParent = getCellValueInt(row, 12);
+			Integer readDPNode = getCellValueInt(row, 12);
 			String readDPIndexField = getCellValueStr(row, 13);
 
 			Converter c = new Converter(readRow, readColumn, readSSFieldName, readSSFieldType, readProcessing, readSort,
-					readDTable, readDField, readDType, readLUT, readLUTField, readLUTKey, readDParent, readDPIndexField);
+					readDTable, readDField, readDType, readLUT, readLUTField, readLUTKey, readDPNode, readDPIndexField);
 
 			cList.add(c);
 
-			showConverter(c);
+			// showConverter(c);
 
 			}
 
@@ -213,25 +213,25 @@ public class ReadOldData
 		return max_table_id;
 		}
 
-	private static ArrayList<Parent> initParentList(ArrayList<Converter> cList)
+	private static ArrayList<PNode> initPNodeList(ArrayList<Converter> cList)
 		{
 		int max_table_id;
 		int table_id = 1;
 		int index = 0;
 		Converter c;
 
-		ArrayList<Parent> pList = new ArrayList<Parent>();
+		ArrayList<PNode> pList = new ArrayList<PNode>();
 
 		max_table_id = getMaxTableId(cList);
 
 		while (table_id < max_table_id + 1)
 			{
 
-			Parent parent = new Parent();
-			parent.TableID = table_id;
+			PNode pn = new PNode();
+			pn.TableID = table_id;
 			c = getConverter(cList, index);
-			parent.ParentTableID = c.DestinationParent;
-			pList.add(parent);
+			pn.ParentTableID = c.DestinationPNode;
+			pList.add(pn);
 
 			index = index + getNumberOfTableItems(table_id, cList, index);
 			table_id++;
@@ -246,24 +246,25 @@ public class ReadOldData
 		int new_index;
 		int index = 0;
 		int max_table_id;
-		ArrayList<Parent> pList;
+		ArrayList<PNode> pList;
 
-		pList = initParentList(cList);
-		showParentList(pList);
+		pList = initPNodeList(cList);
+		showPNodeList(pList);
 
 		max_table_id = getMaxTableId(cList);
 
-		while (table_id < max_table_id + 1)
+		while (table_id < max_table_id + 1) // work through primary tables and
+											// add data to them
 			{
 			new_index = storeDataInTable(table_id, con, cList, index, sheet, pList);
 			index = new_index;
 			table_id++;
 			}
-		showParentList(pList);
+		showPNodeList(pList);
 		}
 
 	private static int storeDataInTable(int table_id, Connection con, ArrayList<Converter> cList, int index, HSSFSheet sheet,
-			ArrayList<Parent> pList)
+			ArrayList<PNode> pList)
 		{
 		int new_index;
 		Integer number_of_values = 0;
@@ -278,29 +279,37 @@ public class ReadOldData
 
 		getInspectionData(cList, index, sheet, number_of_values, table);
 
-		Parent p = getParent(pList, table_id - 1);
+		PNode p = getPNode(pList, table_id - 1);
 
-		showParent(p);
+		showPNode(p);
 
 		try
 			{
 			PreparedStatement statement = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 
-			statement.setInt(1, (int) getParentIndex(table_id, pList));
+			int start = 1;
+
+			int pnodeParent = p.ParentTableID;
+			if (pnodeParent != 0) // parent node = 0 ... therefore super node
+				{
+				int pnodeIndex = (int) getPNodeParentIndex(table_id, pList);
+				statement.setInt(1, pnodeIndex);
+				start = 2;
+				}
 
 			int list_depth = table.get(0).size();
 
 			for (int k = 1; k < list_depth + 1; k++)
 				{
-				for (int j = 2; j < number_of_values + 2; j++)
+				for (int j = start; j < number_of_values + start; j++)
 					{
 					Converter c;
 					String rawVal;
 
-					rawVal = table.get(j - 2).get(k - 1);
+					rawVal = table.get(j - start).get(k - 1);
 					rawVal = rawVal.trim();
 
-					c = getConverter(cList, index + j - 2);
+					c = getConverter(cList, index + j - start);
 
 					// showConverter(c);
 
@@ -376,6 +385,10 @@ public class ReadOldData
 
 					System.out.println("A new record was inserted successfully into table");
 					}
+				else
+					{
+					System.out.println("The SQL statement failed to do executeUpdate()");
+					}
 				}
 			}
 		catch (SQLException e)
@@ -392,14 +405,18 @@ public class ReadOldData
 		return new_index;
 		}
 
-	private static long getParentIndex(int tableID, ArrayList<Parent> pList)
+	private static long getPNodeParentIndex(int tableID, ArrayList<PNode> pList)
 		{
 		long parentDBIndex;
 
-		Parent p = getParent(pList, tableID);
-		Parent up = getParent(pList, p.ParentTableID);
+		PNode p = getPNode(pList, tableID - 1);
+		PNode up = getPNode(pList, p.ParentTableID - 1);
 
 		parentDBIndex = up.dbIndex;
+
+		showPNode(p);
+		showPNode(up);
+		System.out.println("Show parents and up and then show me the index : " + parentDBIndex + "  Oh, make my day!!");
 
 		return parentDBIndex;
 		}
@@ -534,9 +551,9 @@ public class ReadOldData
 		return c;
 		}
 
-	private static Parent getParent(ArrayList<Parent> pList, int index)
+	private static PNode getPNode(ArrayList<PNode> pList, int index)
 		{
-		Parent p;
+		PNode p;
 		if (index < pList.size())
 			p = pList.get(index);
 		else
@@ -589,6 +606,10 @@ public class ReadOldData
 		sqlFieldList = constructSQLFieldList(table_id, cList, index);
 
 		number_of_values = getNumberOfTableItems(table_id, cList, index);
+		if (c.DestinationPNode > 0)
+			number_of_values++; // if it is not the super node, then it will
+								// have a parent
+
 		sqlValueList = constructSQLValueList(number_of_values);
 
 		sql = sqlPreamble + sqlFieldList + sqlValueList;
@@ -610,7 +631,8 @@ public class ReadOldData
 
 		c = getConverter(cList, inc_index);
 
-		sqlFieldList = c.DestinationTable + "_id,";
+		if (!c.DestinationPIndexField.isEmpty())
+			sqlFieldList = c.DestinationPIndexField + ", ";
 
 		while (c.Order == table_id && inc_index < (cList.size()) - 1)
 			{
@@ -669,7 +691,7 @@ public class ReadOldData
 		String sqlValueList;
 		sqlValueList = ") VALUES (";
 
-		for (int i = 0; i < number_of_values + 1; i++)
+		for (int i = 0; i < number_of_values; i++)
 			{
 			sqlValueList = sqlValueList + "?,";
 			}

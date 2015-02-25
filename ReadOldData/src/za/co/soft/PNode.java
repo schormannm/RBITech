@@ -1,6 +1,6 @@
 package za.co.soft;
 
-public class Parent
+public class PNode
 	{
 	int		TableID;
 	int		ParentTableID;
@@ -26,7 +26,7 @@ public class Parent
 	/**
 	 * @return the parentTableID
 	 */
-	public int getParentTableID()
+	public int getPNodeTableID()
 		{
 		return ParentTableID;
 		}
@@ -35,7 +35,7 @@ public class Parent
 	 * @param parentTableID
 	 *            the parentTableID to set
 	 */
-	public void setParentTableID(int parentTableID)
+	public void setPNodeTableID(int parentTableID)
 		{
 		ParentTableID = parentTableID;
 		}

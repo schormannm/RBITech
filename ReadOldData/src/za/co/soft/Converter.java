@@ -15,7 +15,7 @@ public class Converter
 	String	LUT;
 	String	LUTField;
 	String	LUTKey;
-	int		DestinationParent;
+	int		DestinationPNode;
 	String	DestinationPIndexField;
 
 	/**
@@ -33,7 +33,7 @@ public class Converter
 	 */
 	public Converter(int row, int column, String sSFieldName, String sSFieldType, String processing, Integer order,
 			String destinationTable, String destinationField, String desinationType, String lUT, String lUTField, String lUTKey,
-			int destinationParent, String destinationPIndexField)
+			int destinationPNode, String destinationPIndexField)
 		{
 		super();
 		this.row = row;
@@ -42,14 +42,14 @@ public class Converter
 		SSFieldType = sSFieldType;
 		Processing = processing;
 		Order = order;
-		DestinationParent = destinationParent;
-		DestinationPIndexField = destinationPIndexField;
 		DestinationTable = destinationTable;
 		DestinationField = destinationField;
 		DesinationType = desinationType;
 		LUT = lUT;
 		LUTField = lUTField;
 		LUTKey = lUTKey;
+		DestinationPNode = destinationPNode;
+		DestinationPIndexField = destinationPIndexField;
 		}
 
 	/**
@@ -65,9 +65,9 @@ public class Converter
 	 * @param destinationParent
 	 *            the destinationParent to set
 	 */
-	public void setDestinationParent(int destinationParent)
+	public void setDestinationPNode(int destinationPNode)
 		{
-		DestinationParent = destinationParent;
+		DestinationPNode = destinationPNode;
 		}
 
 	/**
@@ -90,9 +90,9 @@ public class Converter
 	/**
 	 * @return the destinationParent
 	 */
-	public int getDestinationParent()
+	public int getDestinationPNode()
 		{
-		return DestinationParent;
+		return DestinationPNode;
 		}
 
 	/**
