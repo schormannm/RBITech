@@ -38,7 +38,7 @@ public final class R {
     public static final class drawable {
         public static final int advance=0x7f020000;
         public static final int backup=0x7f020001;
-        public static final int black=0x7f020018;
+        public static final int black=0x7f020019;
         public static final int expander_ic_maximized=0x7f020002;
         public static final int expander_ic_minimized=0x7f020003;
         public static final int expander_ic_right=0x7f020004;
@@ -59,8 +59,9 @@ public final class R {
         public static final int ic_menu_start_conversation=0x7f020013;
         public static final int left_arrow=0x7f020014;
         public static final int notes=0x7f020015;
-        public static final int thumb=0x7f020016;
-        public static final int white=0x7f020017;
+        public static final int notes1=0x7f020016;
+        public static final int thumb=0x7f020017;
+        public static final int white=0x7f020018;
     }
     public static final class id {
         public static final int accept_location=0x7f09001e;
