@@ -48,7 +48,7 @@ public class AggregateOutput2XLSX
 				process_file(filename);
 				}
 			else
-				System.out.println("Input file specified -> [" + filePathString + "]  does not exist");
+				System.out.println("Input file specified -> [ " + filePathString + " ] does not exist");
 			}
 		else
 			show_usage();
