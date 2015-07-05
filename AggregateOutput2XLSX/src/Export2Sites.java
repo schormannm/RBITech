@@ -22,7 +22,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  *
  */
 
-public class AggregateOutput2XLSX
+public class Export2Sites
 	{
 
 	public enum dataFormatType
@@ -58,7 +58,7 @@ public class AggregateOutput2XLSX
 
 	private static void show_usage()
 		{
-		System.out.println("Usage: AggregateOutput2XLSX <filename>");
+		System.out.println("Usage: Export2Sites <filename>");
 		}
 
 	private static void process_file(String filename)
