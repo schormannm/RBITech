@@ -34,14 +34,31 @@ public class AggregateOutput2XLSX
 		{
 		String filename;
 
-		if (args.length >= 1)
-			filename = args[0];
-		else
-			filename = "Lattice 2015_1_5";
+		filename = "";
 
-		process_file(filename);
+		if (args.length >= 1)
+			{
+			String filePathString;
+			filename = args[0];
+			filePathString = BASE_PATH + filename + EXTENSION;
+
+			File f = new File(filePathString);
+			if (f.exists() && !f.isDirectory())
+				{
+				process_file(filename);
+				}
+			else
+				System.out.println("Input file specified -> [" + filePathString + "]  does not exist");
+			}
+		else
+			show_usage();
 
 		System.out.println("Program successfully completed.");
+		}
+
+	private static void show_usage()
+		{
+		System.out.println("Usage: AggregateOutput2XLSX <filename>");
 		}
 
 	private static void process_file(String filename)
@@ -51,7 +68,7 @@ public class AggregateOutput2XLSX
 		ArrayList<RepeatBlock> table = new ArrayList<RepeatBlock>();
 		String sourcefilename;
 
-		sourcefilename = PATH + filename + EXTENSION;
+		sourcefilename = BASE_PATH + filename + EXTENSION;
 
 		int number_of_rows = getNumberOfRows(sourcefilename);
 
@@ -66,7 +83,7 @@ public class AggregateOutput2XLSX
 			table = getSubFileData(filename, hList, dList);
 
 			String outputfilename = getOutputFilenameString(hList, dList);
-			outputData(hList, dList, table, outputfilename);
+			outputData(outputfilename, hList, dList, table);
 
 			System.out.println("Outputfilename:  " + outputfilename);
 			}
@@ -96,6 +113,8 @@ public class AggregateOutput2XLSX
 					b = getRepeatBlock(filename, hList, dList, i, bIndex);
 					table.add(b);
 					Integer new_insert_index = table.size() - 1;
+					System.out.println("New block added to table.  Index = " + new_insert_index);
+
 					dList.set(i, new_insert_index.toString()); // place index of
 																// RepeatBlock
 																// in table into
@@ -105,6 +124,11 @@ public class AggregateOutput2XLSX
 								// added
 
 					System.out.println(hList.get(i));
+					}
+				else
+					{
+					String fake_insert_index = "-1";
+					dList.set(i, fake_insert_index); // place index of
 					}
 				}
 			}
@@ -137,7 +161,7 @@ public class AggregateOutput2XLSX
 
 		b.block = getRepeats(subfilename, uuidCol, uuid);
 
-		showDataBlock(hList, dList, b);
+		// showDataBlock(hList, dList, b, uuidCol);
 
 		return b;
 		}
@@ -194,7 +218,10 @@ public class AggregateOutput2XLSX
 		int pos_of_slash = snippet.indexOf("/");
 		snippet = snippet.substring(pos_of_slash + 1);
 		snippet = snippet.replace("-", "_");
-		subfilename = PATH + filename + "_" + snippet + EXTENSION;
+		// snippet = snippet.toLowerCase(); // actually not a good idea to mess
+		// with the case
+		subfilename = BASE_PATH + filename + "_" + snippet + EXTENSION;
+		// subfilename = subfilename.toLowerCase();
 		return subfilename;
 		}
 
@@ -209,8 +236,8 @@ public class AggregateOutput2XLSX
 		return number_of_rows;
 		}
 
-	private static void outputData(ArrayList<String> hList, ArrayList<String> dList, ArrayList<RepeatBlock> table,
-			String outputfilename)
+	private static void outputData(String outputfilename, ArrayList<String> hList, ArrayList<String> dList,
+			ArrayList<RepeatBlock> table)
 		{
 		Workbook wb = new XSSFWorkbook();
 		FileOutputStream fileOut;
@@ -220,36 +247,64 @@ public class AggregateOutput2XLSX
 
 		try
 			{
-			fileOut = new FileOutputStream(PATH + outputfilename + EXTENSION);
+			String full_path = BASE_PATH + outputfilename + EXTENSION;
+
+			File yourFile = new File(full_path);
+			if (!yourFile.exists())
+				{
+				yourFile.createNewFile();
+				}
+			fileOut = new FileOutputStream(yourFile, false);
+
+			// fileOut = new FileOutputStream(full_path);
+
+			System.out.println("Output filename : " + full_path);
 
 			Sheet sheet1 = wb.createSheet("new sheet");
 			Row row0 = sheet1.createRow((short) 0);
 			active_row = 1;
 			Row row1 = sheet1.createRow((short) active_row);
 
+			int columns_added = 0;
 			for (int i = 0; i < hList.size(); i++)
 				{
 				// Create a row and put some cells in it. Rows are 0 based.
 				// Create a cell and put a value in it.
-				row0.createCell(i).setCellValue(hList.get(i));
+				int new_columns_added = 0;
+				row0.createCell(columns_added).setCellValue(hList.get(i));
 
 				String snippet = hList.get(i);
+				// System.out.println("Processing output for : " + snippet);
+
 				if (snippet.contains(REPEAT_INDICATOR))
 					{
-					int index_into_table = Integer.valueOf(dList.get(i));
-					RepeatBlock b = table.get(index_into_table);
-					new_active_row = outputDataBlock(sheet1, b, row0, active_row, column_offset);
-					column_offset = column_offset + b.block.get(Integer.valueOf(dList.get(i))).size();
+					String index_value = dList.get(i);
+					int index_into_table = Integer.valueOf(index_value);
+					if (index_into_table >= 0)
+						{
+						RepeatBlock b = table.get(index_into_table);
+						column_offset = columns_added + 1;
+						new_active_row = outputDataBlock(sheet1, b, row0, active_row, column_offset);
+						new_columns_added = getUUIDColumn(b.hList) + 1;
+						row1 = sheet1.createRow((short) new_active_row);
+						}
 					}
 				else
 					{
 					if (active_row != new_active_row)
 						{
-						row1 = sheet1.createRow((short) new_active_row);
 						active_row = new_active_row;
 						}
-					row1.createCell(i).setCellValue(dList.get(i));
+
+					String dValue = dList.get(i);
+					row1.createCell(columns_added).setCellValue(dValue);
+					new_columns_added = 1;
+					// System.out.println("Col: " + i + " " + hList.get(i) + " "
+					// + dValue);
 					}
+
+				columns_added = columns_added + new_columns_added;
+
 				}
 
 			wb.write(fileOut);
@@ -270,18 +325,29 @@ public class AggregateOutput2XLSX
 
 	private static int outputDataBlock(Sheet sheet1, RepeatBlock b, Row row0, int active_row, Integer column_offset)
 		{
-		int new_active_row = active_row;
+		ArrayList<Row> rows = new ArrayList<Row>();
 
-		for (int i = 0; i < b.hList.size(); i++)
+		int new_active_row = active_row + 1;
+
+		int uuidCol = getUUIDColumn(b.hList);
+
+		for (int i = 0; i < uuidCol; i++)
 			{
-			row0.createCell(i + column_offset).setCellValue(b.hList.get(i));
+			int new_col = i + column_offset;
+			String heading = b.hList.get(i);
+			row0.createCell(new_col).setCellValue(heading);
+
 			ArrayList<String> column = b.block.get(i);
+			int start_row = active_row;
 
 			for (int j = 0; j < column.size(); j++)
 				{
-				Row row1 = sheet1.createRow((short) new_active_row);
-				row1.createCell(i + column_offset).setCellValue(column.get(j));
-				new_active_row++;
+				if (i == 0) // in other words the first column
+					{
+					rows.add(sheet1.createRow((short) new_active_row));
+					new_active_row++;
+					}
+				rows.get(j).createCell(new_col).setCellValue(column.get(j));
 				}
 			}
 
@@ -301,7 +367,17 @@ public class AggregateOutput2XLSX
 		site_inspection_date = getValueByToken(hList, dList, "date_of_inspection");
 		site_region = getValueByToken(hList, dList, "site_group-region");
 
-		output_filename_string = site_region + "_" + site_name + "_" + site_number + "_" + site_inspection_date;
+		// If site_inspection_date is not formatted correctly, or contains /
+		// characters, then it needs to be fixed.
+		System.out.println("Site inspection date raw: " + site_inspection_date);
+
+		output_filename_string = site_name + "_" + site_number + "_" + site_inspection_date;
+		output_filename_string = output_filename_string.toLowerCase();
+		output_filename_string = site_region + "_" + output_filename_string;
+
+		// Needs to be done for Linux
+		output_filename_string = output_filename_string.replace("/", "-");
+		System.out.println("Output filename string: " + output_filename_string);
 
 		return output_filename_string;
 		}
@@ -335,26 +411,32 @@ public class AggregateOutput2XLSX
 
 		}
 
-	private static void showDataBlock(ArrayList<String> hList, ArrayList<String> dList, RepeatBlock b)
+	private static void showDataBlock(ArrayList<String> hList, ArrayList<String> dList, RepeatBlock b, int uuidCol)
 		{
 		String h, d, h2;
-		String d2 = "";
 		ArrayList<String> column;
+		int i;
 
-		for (int i = 0; i < hList.size(); i++)
+		// for (i = 0; i < hList.size(); i++)
+		// {
+		// h = getArrayListElement(hList, i);
+		// d = getArrayListElement(dList, i);
+		// System.out.println(h + " : " + d);
+		// }
+
+		for (i = 0; i < uuidCol; i++)
 			{
-			h = getArrayListElement(hList, i);
-			d = getArrayListElement(dList, i);
-			System.out.println(h + " : " + d);
+			String d2 = "";
 			h2 = b.hList.get(i);
 			column = b.block.get(i);
 			for (int j = 0; j < column.size(); j++)
 				{
 				d2 = d2 + "," + column.get(j);
 				}
+			System.out.println("Column - " + i);
 			System.out.println(h2 + " Values: " + d2);
 			}
-		System.out.println("================================================================================");
+		System.out.println("================== End of routine - show data block ======================================");
 
 		}
 
@@ -372,7 +454,7 @@ public class AggregateOutput2XLSX
 			s = getArrayListElement(cList, i);
 			System.out.println(s + ":");
 			}
-		System.out.println("================================================================================");
+		System.out.println("=================================== End of routine - ShowList ===========================");
 		}
 
 	private static String getArrayListElement(ArrayList<String> cList, int index)
@@ -489,44 +571,60 @@ public class AggregateOutput2XLSX
 	private static ArrayList<ArrayList<String>> fillStringBlock(XSSFSheet sheet, int uuidCol, String uuid)
 		{
 		ArrayList<ArrayList<String>> bList = new ArrayList<ArrayList<String>>();
-		ArrayList<String> cList = new ArrayList<String>();
 		int number_of_rows;
 
 		number_of_rows = sheet.getLastRowNum();
 		System.out.println("Rows " + number_of_rows);
 
-		// Iterate through each rows one by one
-		Iterator<Row> rowIterator = sheet.iterator();
+		String row_uuid;
 
-		Row row = null;
+		// System.out.println("Row uuid vs uuid : " + row_uuid + " : " +
+		// uuid);
 
-		row = rowIterator.next(); // skip the first row
-
-		while (rowIterator.hasNext())
+		for (int col = 0; col < uuidCol; col++)
 			{
-			row = rowIterator.next();
-			String row_uuid;
-			int current_row = row.getRowNum();
+			ArrayList<String> cList = new ArrayList<String>();
 
-			row_uuid = getCell(sheet, current_row, uuidCol);
-
-			// System.out.println("Row uuid vs uuid : " + row_uuid + " : " +
-			// uuid);
-			if (row_uuid.contentEquals(uuid))
+			for (int current_row = 1; current_row < number_of_rows; current_row++)
 				{
-				for (int col = 0; col < uuidCol; col++)
+				row_uuid = getCell(sheet, current_row, uuidCol);
+
+				if (row_uuid.contentEquals(uuid))
 					{
 					String cell_val;
+					boolean not_duplicate = true;
 					cell_val = getCell(sheet, current_row, col);
-					cList.add(cell_val); // add the cell to the column list
-					}
-				bList.add(cList); // add the row to the row list
-				// System.out.println("Row added");
-				}
+					// not_duplicate = check_not_duplicate(cList, cell_val);
+					// if (not_duplicate)
+					// System.out.println("Not duplicate - " + cell_val);
+					// else
+					// System.out.println("Duplicate - " + cell_val);
 
+					cList.add(cell_val); // add the cell to the column list
+											// if it is not a duplicate
+					// System.out.println("Row added to column");
+					}
+				}
+			// showList(cList);
+			bList.add(cList); // add the column to the block
+			// System.out.println("---> Column " + col + " added to Block");
 			}
 
 		return bList;
+
+		}
+
+	private static boolean check_not_duplicate(ArrayList<String> cList, String cell_val)
+		{
+		boolean not_duplicate = true;
+		for (int i = 0; i < cList.size(); i++)
+			{
+			// System.out.println("Comparing - " + cell_val + " : " +
+			// cList.get(i));
+			if (cell_val.contains(cList.get(i)))
+				not_duplicate = false;
+			}
+		return not_duplicate;
 		}
 
 	private static XSSFSheet getWorksheet(String StringFullFilename)
@@ -583,7 +681,9 @@ public class AggregateOutput2XLSX
 
 				case Cell.CELL_TYPE_NUMERIC:
 
-					if (HSSFDateUtil.isCellDateFormatted(cell))
+					if (HSSFDateUtil.isCellDateFormatted(cell)) // Using the
+																// wrong type on
+																// purpose
 						{
 						// System.out.println("Row No.: " + cur_row.getRowNum()
 						// + " " + cell.getDateCellValue());
@@ -620,8 +720,10 @@ public class AggregateOutput2XLSX
 
 		}
 
-	public static final String	PATH				= "C:\\My Documents\\Special projects\\RBI Tech database project\\Development files\\Briefcase\\Exports\\";
-	public static final String	EXTENSION			= ".XLSX";
+	// public static final String BASE_PATH = "C:\\RBI-Data\\Export\\"; // Used
+	// for testing
+	public static final String	BASE_PATH			= "";
+	public static final String	EXTENSION			= ".xlsx";
 	public static final String	PARENT_KEY			= "PARENT_KEY";
 	public static final String	REPEAT_INDICATOR	= "SET-OF-";
 	}
