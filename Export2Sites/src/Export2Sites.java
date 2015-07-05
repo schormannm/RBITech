@@ -18,7 +18,9 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 /**
- * @author mark schormann
+ * @author Mark Schormann
+ * 
+ *         5 July 2015 - renamed the project to Export2Sites from AggregateOut2XLSX (or something like that)
  *
  */
 
@@ -299,8 +301,7 @@ public class Export2Sites
 					String dValue = dList.get(i);
 					row1.createCell(columns_added).setCellValue(dValue);
 					new_columns_added = 1;
-					// System.out.println("Col: " + i + " " + hList.get(i) + " "
-					// + dValue);
+					// System.out.println("Col: " + i + " " + hList.get(i) + " " + dValue);
 					}
 
 				columns_added = columns_added + new_columns_added;
@@ -308,16 +309,15 @@ public class Export2Sites
 				}
 
 			wb.write(fileOut);
+			wb.close();
 			fileOut.close();
 			}
 		catch (FileNotFoundException e)
 			{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			}
 		catch (IOException e)
 			{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			}
 
@@ -338,7 +338,7 @@ public class Export2Sites
 			row0.createCell(new_col).setCellValue(heading);
 
 			ArrayList<String> column = b.block.get(i);
-			int start_row = active_row;
+			// int start_row = active_row;
 
 			for (int j = 0; j < column.size(); j++)
 				{
@@ -443,8 +443,7 @@ public class Export2Sites
 	/**
 	 * @param cList
 	 * 
-	 *            Just a short method to print out the Heading list to the
-	 *            console
+	 *            Just a short method to print out the Heading list to the console
 	 */
 	private static void showList(ArrayList<String> cList)
 		{
@@ -507,7 +506,6 @@ public class Export2Sites
 			}
 
 		row = sheet.getRow(rowIndex);
-		int column = 0;
 
 		// For each row, iterate through each columns
 		Iterator<Cell> cellIterator = row.cellIterator();
@@ -524,7 +522,6 @@ public class Export2Sites
 			cell_val = getCell(sheet, rowIndex, columnIndex);
 			cList.add(cell_val);
 
-			column++;
 			}
 
 		return cList;
@@ -552,7 +549,7 @@ public class Export2Sites
 		int col = 0;
 
 		// For each row, iterate through each columns
-		Iterator<Cell> cellIterator = row.cellIterator();
+		// Iterator<Cell> cellIterator = row.cellIterator();
 
 		for (col = 0; col < maxCols; col++)
 			{
@@ -592,8 +589,8 @@ public class Export2Sites
 				if (row_uuid.contentEquals(uuid))
 					{
 					String cell_val;
-					boolean not_duplicate = true;
 					cell_val = getCell(sheet, current_row, col);
+					// boolean not_duplicate = true;
 					// not_duplicate = check_not_duplicate(cList, cell_val);
 					// if (not_duplicate)
 					// System.out.println("Not duplicate - " + cell_val);
@@ -619,8 +616,7 @@ public class Export2Sites
 		boolean not_duplicate = true;
 		for (int i = 0; i < cList.size(); i++)
 			{
-			// System.out.println("Comparing - " + cell_val + " : " +
-			// cList.get(i));
+			// System.out.println("Comparing - " + cell_val + " : " + cList.get(i));
 			if (cell_val.contains(cList.get(i)))
 				not_duplicate = false;
 			}
@@ -681,12 +677,9 @@ public class Export2Sites
 
 				case Cell.CELL_TYPE_NUMERIC:
 
-					if (HSSFDateUtil.isCellDateFormatted(cell)) // Using the
-																// wrong type on
-																// purpose
+					if (HSSFDateUtil.isCellDateFormatted(cell)) // Using the wrong type on purpose
 						{
-						// System.out.println("Row No.: " + cur_row.getRowNum()
-						// + " " + cell.getDateCellValue());
+						// System.out.println("Row No.: " + cur_row.getRowNum() + " " + cell.getDateCellValue());
 						Date date = cell.getDateCellValue();
 						String dateFmt = cell.getCellStyle().getDataFormatString();
 						cell_value = new CellDateFormatter(dateFmt).format(date);
@@ -713,15 +706,13 @@ public class Export2Sites
 		else
 			cell_value = " ";
 
-		// System.out.println("Row : " + row + "Col : " + column + " - Cell
-		// value : " + cell_value);
+		// System.out.println("Row : " + row + "Col : " + column + " - Cell value : " + cell_value);
 
 		return cell_value;
 
 		}
 
-	// public static final String BASE_PATH = "C:\\RBI-Data\\Export\\"; // Used
-	// for testing
+	// public static final String BASE_PATH = "C:\\RBI-Data\\Export\\"; // Used for testing
 	public static final String	BASE_PATH			= "";
 	public static final String	EXTENSION			= ".xlsx";
 	public static final String	PARENT_KEY			= "PARENT_KEY";
