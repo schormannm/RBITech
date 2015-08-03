@@ -20,7 +20,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 /**
  * @author Mark Schormann
  * 
- *         5 July 2015 - renamed the project to Export2Sites from AggregateOut2XLSX (or something like that)
+ *         5 July 2015 - renamed the project to Export2Sites from AggregateOutput2XLSX (or something like that)
  *
  */
 
@@ -28,9 +28,16 @@ public class Export2Sites
 	{
 
 	public enum dataFormatType
+
 		{
 		SINGLE, HREPEAT, VREPEAT
 		};
+
+	// public static final String BASE_PATH = "C:\\RBI-Data\\Export\\"; // Used for testing
+	public static final String	BASE_PATH			= "";
+	public static final String	EXTENSION			= ".xlsx";
+	public static final String	PARENT_KEY			= "PARENT_KEY";
+	public static final String	REPEAT_INDICATOR	= "SET-OF-";
 
 	public static void main(String[] args)
 		{
@@ -84,7 +91,9 @@ public class Export2Sites
 			// showData(hList, dList);
 			table = getSubFileData(filename, hList, dList);
 
-			String outputfilename = getOutputFilenameString(hList, dList);
+			String outputfilename = getOutputFilenameString(hList, dList, filename);
+
+			// setupSpreadsheet(outputfilename); // pre-create rows to prevent the overwrite problem ???
 			outputData(outputfilename, hList, dList, table);
 
 			System.out.println("Outputfilename:  " + outputfilename);
@@ -110,7 +119,9 @@ public class Export2Sites
 			String snippet = hList.get(i);
 			if (snippet.contains(REPEAT_INDICATOR))
 				{
-				if (dList.get(i).length() > 2)
+				int len = dList.get(i).length();
+				System.out.println("Repeats for: " + snippet + " at index " + i + " contains data " + dList.get(i));
+				if (len > 2)
 					{
 					b = getRepeatBlock(filename, hList, dList, i, bIndex);
 					table.add(b);
@@ -131,6 +142,7 @@ public class Export2Sites
 					{
 					String fake_insert_index = "-1";
 					dList.set(i, fake_insert_index); // place index of
+					// System.out.println("ALERT - repeat but test fails: " + dList.get(i) + " " + snippet);
 					}
 				}
 			}
@@ -162,6 +174,8 @@ public class Export2Sites
 			}
 
 		b.block = getRepeats(subfilename, uuidCol, uuid);
+
+		// TODO - add in code to add extral hList column to indicate end of block
 
 		// showDataBlock(hList, dList, b, uuidCol);
 
@@ -284,21 +298,25 @@ public class Export2Sites
 					int index_into_table = Integer.valueOf(index_value);
 					if (index_into_table >= 0)
 						{
+						active_row = 1; // Also to fix the staggering. Need to remove to undo
 						RepeatBlock b = table.get(index_into_table);
 						column_offset = columns_added + 1;
-						new_active_row = outputDataBlock(sheet1, b, row0, active_row, column_offset);
-						new_columns_added = getUUIDColumn(b.hList) + 1;
-						row1 = sheet1.createRow((short) new_active_row);
+						new_active_row = outputDataBlock(sheet1, b, row0, active_row, column_offset, snippet);
+						new_columns_added = getUUIDColumn(b.hList) + 2;
+						new_active_row = 1; // This and the next line commented should fix the staggering. In order
+											// to redo the staggering one should remove this line and add the next line back
+											// row1 = sheet1.createRow((short) new_active_row);
 						}
 					}
 				else
 					{
-					if (active_row != new_active_row)
-						{
-						active_row = new_active_row;
-						}
+					// if (active_row != new_active_row)
+					// {
+					// active_row = new_active_row;
+					// }
 
 					String dValue = dList.get(i);
+					dValue = dValue.replace("_", " ");
 					row1.createCell(columns_added).setCellValue(dValue);
 					new_columns_added = 1;
 					// System.out.println("Col: " + i + " " + hList.get(i) + " " + dValue);
@@ -323,17 +341,19 @@ public class Export2Sites
 
 		}
 
-	private static int outputDataBlock(Sheet sheet1, RepeatBlock b, Row row0, int active_row, Integer column_offset)
+	private static int outputDataBlock(Sheet sheet1, RepeatBlock b, Row row0, int active_row, Integer column_offset, String snippet)
 		{
 		ArrayList<Row> rows = new ArrayList<Row>();
 
-		int new_active_row = active_row + 1;
+		// int new_active_row = active_row + 1;
+		int new_active_row = 1;
+		int new_col = column_offset;
 
 		int uuidCol = getUUIDColumn(b.hList);
 
 		for (int i = 0; i < uuidCol; i++)
 			{
-			int new_col = i + column_offset;
+			new_col = i + column_offset;
 			String heading = b.hList.get(i);
 			row0.createCell(new_col).setCellValue(heading);
 
@@ -344,17 +364,31 @@ public class Export2Sites
 				{
 				if (i == 0) // in other words the first column
 					{
-					rows.add(sheet1.createRow((short) new_active_row));
+					int max_row = sheet1.getLastRowNum();
+					if (new_active_row > max_row)
+						{
+						Row new_row = sheet1.createRow((short) new_active_row);
+						rows.add(new_row);
+						}
+					else
+						rows.add(sheet1.getRow(new_active_row));
 					new_active_row++;
 					}
-				rows.get(j).createCell(new_col).setCellValue(column.get(j));
+
+				String dValue = column.get(j);
+				dValue = dValue.replace("_", " ");
+				rows.get(j).createCell(new_col).setCellValue(dValue);
 				}
 			}
+
+		// Add a column at the end of the block to indicate the end of the block
+		new_col = column_offset + uuidCol;
+		row0.createCell(new_col).setCellValue("END-" + snippet);
 
 		return new_active_row;
 		}
 
-	private static String getOutputFilenameString(ArrayList<String> hList, ArrayList<String> dList)
+	private static String getOutputFilenameString(ArrayList<String> hList, ArrayList<String> dList, String filename)
 		{
 		String site_name;
 		String site_number;
@@ -371,9 +405,11 @@ public class Export2Sites
 		// characters, then it needs to be fixed.
 		System.out.println("Site inspection date raw: " + site_inspection_date);
 
-		output_filename_string = site_name + "_" + site_number + "_" + site_inspection_date;
-		output_filename_string = output_filename_string.toLowerCase();
-		output_filename_string = site_region + "_" + output_filename_string;
+		String filename_fixed = filename.replaceAll(" ", "_");
+		output_filename_string = site_name.replace(" ", "_") + "_" + site_number.replace(" ", "-") + "_"
+				+ site_inspection_date.replace(" ", "-");
+		// output_filename_string = output_filename_string.toLowerCase();
+		output_filename_string = site_region + "_" + output_filename_string + "_VC_" + filename_fixed;
 
 		// Needs to be done for Linux
 		output_filename_string = output_filename_string.replace("/", "-");
@@ -555,6 +591,7 @@ public class Export2Sites
 			{
 			String cell_val;
 			cell_val = getCell(sheet, rowIndex, col);
+			// cell_val = cell_val.replace("_", " ");
 			cList.add(cell_val);
 			}
 
@@ -596,6 +633,8 @@ public class Export2Sites
 					// System.out.println("Not duplicate - " + cell_val);
 					// else
 					// System.out.println("Duplicate - " + cell_val);
+
+					// cell_val = cell_val.replace("_", " ");
 
 					cList.add(cell_val); // add the cell to the column list
 											// if it is not a duplicate
@@ -712,9 +751,4 @@ public class Export2Sites
 
 		}
 
-	// public static final String BASE_PATH = "C:\\RBI-Data\\Export\\"; // Used for testing
-	public static final String	BASE_PATH			= "";
-	public static final String	EXTENSION			= ".xlsx";
-	public static final String	PARENT_KEY			= "PARENT_KEY";
-	public static final String	REPEAT_INDICATOR	= "SET-OF-";
 	}
