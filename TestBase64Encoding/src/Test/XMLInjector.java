@@ -28,10 +28,16 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+//
+// This program takes a directory containing a file called submission.xml and then a sea of .jpg files that
+// the .xml file refers to.  It generates a file called SeaOfXML.XML containing the original submission.xml
+// with all references to the .jpg files replaced with Base64 encoded byte arrays of the images.
+//
+
 public class XMLInjector
 	{
 
-	public static final String BASE_DIR = "c:/rbi-data/merge/uuid/";
+	public static final String BASE_DIR = "c:/rbi-data/merge/uuid-monopole-p13/";
 
 	public static void main(String[] args)
 		{
@@ -58,7 +64,7 @@ public class XMLInjector
 			StreamResult result = new StreamResult(new StringWriter());
 			DOMSource source = new DOMSource(doc);
 			transformer.transform(source, result);
-			Writer output = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("SeeOfXML.xml"), "UTF-8"));
+			Writer output = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Monopole-13-SeaOfXML.xml"), "UTF-8"));
 
 			String xmlOutput = result.getWriter().toString();
 			output.write(xmlOutput);

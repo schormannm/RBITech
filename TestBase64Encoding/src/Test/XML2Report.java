@@ -75,14 +75,17 @@ public class XML2Report
 				}
 			}
 		else
+			{
+			System.out.println("Args length : " + args.length);
 			show_usage();
+			}
 
 		return files_exist;
 		}
 
 	private static void show_usage()
 		{
-		System.out.println("Usage: Site2Report <input_filename> <template_filename>");
+		System.out.println("Usage: XML2Report <input_filename> <template_filename>");
 		}
 
 	public static void process_files(String filename, String template) throws Exception
