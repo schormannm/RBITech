@@ -8,6 +8,12 @@ import javax.xml.bind.JAXBContext;
 import org.docx4j.Docx4J;
 import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
 
+//
+// This program takes a file containing the site data and photos all converted into a single XML file
+// It combines this with a Word document template using Content Controls to merge the appropriate data
+// into the correct places in the Word Template.  This mechanism is used in preference to the MailMerge
+// way of doing it, as it allows the insertion of photographs directly.
+//
 public class XMLReporter
 	{
 	public static JAXBContext context = org.docx4j.jaxb.Context.jc;
@@ -70,7 +76,7 @@ public class XMLReporter
 				else
 					{
 					System.out.println("Input file specified -> [ " + filePathString + " ] does not exist");
-					files_exist = false; // Just take one false to make it false
+					files_exist = false; // Just takes one false to make it false
 					}
 				}
 			}

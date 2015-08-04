@@ -109,42 +109,46 @@ public class XMLInjector
 
 	public static void processTags(Node nodes) throws IOException
 		{
-		if (nodes.hasChildNodes() || nodes.getNodeType() != 3)
+		if (nodes.hasChildNodes() || nodes.getNodeType() != 3) // Text node
 			{
 			// System.out.println(nodes.getNodeName() + " : " + nodes.getTextContent());
 
 			NodeList nl = nodes.getChildNodes();
 
-			if (nodes.getTextContent().contains(".jpg") && nl.getLength() == 1)
+			if (nl.getLength() == 1)
 				{
-				System.out.println("Found a JPG node -> " + nodes.getNodeName() + " : " + nodes.getTextContent());
-				String filename = nodes.getTextContent();
-
-				String filePathString = BASE_DIR + filename;
-
-				File f = new File(filePathString);
-				if (f.exists() && !f.isDirectory())
+				if (nodes.getTextContent().contains(".jpg"))
 					{
-					System.out.println("Input file specified -> [ " + filePathString + " ] exists");
+					System.out.println("Found a JPG node -> " + nodes.getNodeName() + " : " + nodes.getTextContent());
+					String filename = nodes.getTextContent();
 
-					// * Reading a Image file from file system
-					FileInputStream imageInFile = new FileInputStream(f);
-					byte imageData[] = new byte[(int) f.length()];
-					imageInFile.read(imageData);
+					String filePathString = BASE_DIR + filename;
 
-					// Converting Image byte array into Base64 String
-					byte[] imageBytes = Base64.encodeBase64(imageData);
+					File f = new File(filePathString);
+					if (f.exists() && !f.isDirectory())
+						{
+						System.out.println("Input file specified -> [ " + filePathString + " ] exists");
 
-					String imageDataString = new String(imageBytes);
+						// * Reading a Image file from file system
+						FileInputStream imageInFile = new FileInputStream(f);
+						byte imageData[] = new byte[(int) f.length()];
+						imageInFile.read(imageData);
 
-					nodes.setTextContent(imageDataString);
+						// Converting Image byte array into Base64 String
+						byte[] imageBytes = Base64.encodeBase64(imageData);
+
+						String imageDataString = new String(imageBytes);
+
+						nodes.setTextContent(imageDataString);
+
+						imageInFile.close();
+						}
+					else
+						{
+						System.out.println("Input file specified -> [ " + filePathString + " ] does not exist");
+						// files_exist = false; // Just take one false to make it false
+						}
 					}
-				else
-					{
-					System.out.println("Input file specified -> [ " + filePathString + " ] does not exist");
-					// files_exist = false; // Just take one false to make it false
-					}
-
 				}
 
 			for (int j = 0; j < nl.getLength(); j++)
