@@ -2,7 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="C:/Users/mark/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar">
+	<classpathentry exported="true" kind="lib" path="C:/Users/mark/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="maven.groupId" value="commons-codec"/>
@@ -11,11 +11,11 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="/docx4j-git"/>
+	<classpathentry exported="true" kind="src" path="/docx4j-git"/>
 	<classpathentry kind="lib" path="C:/Download/java/libraries/POI/poi-bin-3.12-20150511/poi-3.12/poi-3.12-20150511.jar"/>
 	<classpathentry kind="lib" path="C:/Download/java/libraries/POI/poi-bin-3.12-20150511/poi-3.12/poi-ooxml-3.12-20150511.jar"/>
-	<classpathentry kind="lib" path="C:/Download/java/libraries/POI/poi-bin-3.11-20141221/poi-3.11/lib/log4j-1.2.17.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mark/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar">
+	<classpathentry exported="true" kind="lib" path="C:/Download/java/libraries/POI/poi-bin-3.11-20141221/poi-3.11/lib/log4j-1.2.17.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/mark/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="maven.groupId" value="org.slf4j"/>
@@ -24,7 +24,7 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/mark/.m2/repository/net/engio/mbassador/1.1.10/mbassador-1.1.10.jar">
+	<classpathentry exported="true" kind="lib" path="C:/Users/mark/.m2/repository/net/engio/mbassador/1.1.10/mbassador-1.1.10.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="maven.groupId" value="net.engio"/>
@@ -34,5 +34,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="_resources"/>
+	<classpathentry kind="lib" path="docx4j-3.2.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,4 +1,4 @@
-package Test;
+package createDocuments;
 
 import java.io.BufferedWriter;
 import java.io.File;

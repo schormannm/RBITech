@@ -1,4 +1,4 @@
-package Test;
+package createDocuments;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -76,7 +76,7 @@ public class XML2Report
 			}
 		else
 			{
-			System.out.println("Args length : " + args.length);
+			System.out.println("Number of arguments detected on command line : " + args.length);
 			show_usage();
 			}
 
