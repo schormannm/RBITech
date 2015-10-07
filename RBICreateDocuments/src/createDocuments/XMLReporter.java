@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 
 import javax.xml.bind.JAXBContext;
 
+import org.apache.commons.io.FilenameUtils;
 import org.docx4j.Docx4J;
 import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
 
@@ -24,8 +25,9 @@ public class XMLReporter
 	 * @param args
 	 */
 
-	public static final String	BASE_PATH			= "C:/RBI-Data/Merge/";	// Used for testing
-	// public static final String BASE_PATH = "";
+	public static final String	BASE_PATH	= "";			// Used for testing
+	public static final String	OUT_PATH	= "Reports/";
+
 	public static final String	EXTENSION			= ".docx";
 	public static final String	PARENT_KEY			= "PARENT_KEY";
 	public static final String	REPEAT_INDICATOR	= "SET-OF-";
@@ -54,9 +56,9 @@ public class XMLReporter
 	private static Boolean files_exist(String[] args)
 		{
 		Boolean files_exist = true;
-		String input_filename;
+		String filename;
 
-		input_filename = "";
+		filename = "";
 
 		if (args.length >= 2)
 			{
@@ -64,9 +66,9 @@ public class XMLReporter
 
 			for (int i = 0; i < 2; i++)
 				{
-				input_filename = args[i];
+				filename = args[i];
 
-				filePathString = BASE_PATH + input_filename;
+				filePathString = BASE_PATH + filename;
 
 				File f = new File(filePathString);
 				if (f.exists() && !f.isDirectory())
@@ -91,42 +93,66 @@ public class XMLReporter
 
 	private static void show_usage()
 		{
-		System.out.println("Usage: XML2Report <input_filename> <template_filename>");
+		System.out.println("Usage: XMLReporter <input_filename> <template_filename>");
 		}
 
 	public static void process_files(String filename, String template) throws Exception
 		{
 
 		String input_DOCX = BASE_PATH + template;
-		String input_XML = BASE_PATH + filename;
+
+		String input_XML = BASE_PATH + filename; // need to strip away the path for this.
+
+		String template_file = FilenameUtils.getName(template);
+		String code = template_file.substring(0, 2);
+
+		String file_name_only = FilenameUtils.getName(filename);
+		int pos1 = file_name_only.indexOf("-1.");
+		filename = file_name_only.substring(0, pos1 + 1) + code + file_name_only.substring(pos1 + 1);
 
 		// resulting docx
 		// String OUTPUT_DOCX = System.getProperty("user.dir") + "/OUT_ContentControlsMergeXML.docx";
-		String OUTPUT_DOCX = BASE_PATH + "OUT_" + template;
+		String output_DOCX = BASE_PATH + getFilenameWithoutExtension(filename) + ".docx";
+		System.out.println("Composite output filename : " + output_DOCX);
 
-		// Load input_template.docx
-		WordprocessingMLPackage wordMLPackage = Docx4J.load(new File(input_DOCX));
+		File f = new File(output_DOCX);
+		if (f.exists() && !f.isDirectory())
+			{
+			System.out.println("The output file exists already -> " + output_DOCX);
+			System.out.println("<------- Skipping all further processing -------->");
+			}
+		else
+			{
+			// Load input_template.docx
+			WordprocessingMLPackage wordMLPackage = Docx4J.load(new File(input_DOCX));
 
-		// Open the xml stream
-		FileInputStream xmlStream = new FileInputStream(new File(input_XML));
+			// Open the xml stream
+			FileInputStream xmlStream = new FileInputStream(new File(input_XML));
 
-		// Do the binding:
-		// FLAG_NONE means that all the steps of the binding will be done,
-		// otherwise you could pass a combination of the following flags:
-		// FLAG_BIND_INSERT_XML: inject the passed XML into the document
-		// FLAG_BIND_BIND_XML: bind the document and the xml (including any OpenDope handling)
-		// FLAG_BIND_REMOVE_SDT: remove the content controls from the document (only the content remains)
-		// FLAG_BIND_REMOVE_XML: remove the custom xml parts from the document
+			// Do the binding:
+			// FLAG_NONE means that all the steps of the binding will be done,
+			// otherwise you could pass a combination of the following flags:
+			// FLAG_BIND_INSERT_XML: inject the passed XML into the document
+			// FLAG_BIND_BIND_XML: bind the document and the xml (including any OpenDope handling)
+			// FLAG_BIND_REMOVE_SDT: remove the content controls from the document (only the content remains)
+			// FLAG_BIND_REMOVE_XML: remove the custom xml parts from the document
 
-		// Docx4J.bind(wordMLPackage, xmlStream, Docx4J.FLAG_NONE);
-		// If a document doesn't include the Opendope definitions, eg. the XPathPart,
-		// then the only thing you can do is insert the xml
-		// the example document binding-simple.docx doesn't have an XPathPart....
-		Docx4J.bind(wordMLPackage, xmlStream, Docx4J.FLAG_BIND_INSERT_XML | Docx4J.FLAG_BIND_BIND_XML);
+			// Docx4J.bind(wordMLPackage, xmlStream, Docx4J.FLAG_NONE);
+			// If a document doesn't include the Opendope definitions, eg. the XPathPart,
+			// then the only thing you can do is insert the xml
+			// the example document binding-simple.docx doesn't have an XPathPart....
+			Docx4J.bind(wordMLPackage, xmlStream, Docx4J.FLAG_BIND_INSERT_XML | Docx4J.FLAG_BIND_BIND_XML);
 
-		// Save the document
-		Docx4J.save(wordMLPackage, new File(OUTPUT_DOCX), Docx4J.FLAG_BIND_REMOVE_XML);
-		System.out.println("Saved: " + OUTPUT_DOCX);
+			// Save the document
+			Docx4J.save(wordMLPackage, new File(output_DOCX), Docx4J.FLAG_BIND_REMOVE_XML);
+			System.out.println("Saved: " + output_DOCX);
+			}
 		}
 
+	private static String getFilenameWithoutExtension(String input_filename)
+		{
+		String filename_sans_extension = input_filename.substring(0, input_filename.indexOf("."));
+		// System.out.println("Filename without extension " + filename_sans_extension);
+		return filename_sans_extension;
+		}
 	}
