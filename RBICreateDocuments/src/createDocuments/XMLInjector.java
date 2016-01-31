@@ -53,62 +53,60 @@ public class XMLInjector
 			}
 		else
 			{
+			String input_path;
 			input_filename = args[0];
 			outpath = args[1];
 
-			input_file_exists = check_file_exists(BASE_PATH, input_filename);
-			outpath_exists = create_output_file(outpath);
+			input_path = BASE_PATH + input_filename;
+			input_file_exists = check_file_exists(input_path);
+
+			outpath_exists = check_path_exists(outpath);
+			if (!outpath_exists)
+				System.out.println("Output path does not exist " + outpath);
 
 			if (input_file_exists && outpath_exists)
 				{
-
 				process_files(input_filename, outpath);
-
 				System.out.println("Program successfully completed.");
 				}
 			else
 				{
-				System.out.println("Program did not run successfully.");
+				System.out.println("Program did not run successfully - error in arguments.");
 				}
 			}
 		}
 
-	private static Boolean check_file_exists(String path, String filename)
+	private static Boolean check_file_exists(String filePathString)
 		{
-		Boolean file_exists = true;
-		String filePathString;
-
-		filePathString = path + filename;
+		Boolean file_exists = false;
 
 		File f = new File(filePathString);
 		if (f.exists() && !f.isDirectory())
 			{
-			System.out.println("Argument file specified -> [ " + filePathString + " ] exists");
+			file_exists = true;
+			System.out.println("File exists ----> " + filePathString);
 			}
 		else
 			{
-			System.out.println("Argument file specified -> [ " + filePathString + " ] does not exist");
-			file_exists = false; // Just takes one false to make it false
+			System.out.println("File does not exist -> " + filePathString);
 			}
-
 		return file_exists;
 		}
 
-	private static Boolean create_output_file(String filePathString)
+	private static Boolean check_path_exists(String filePathString)
 		{
-		Boolean file_exists = true;
+		Boolean file_exists = false;
 
 		File f = new File(filePathString);
 		if (f.exists() && f.isDirectory())
 			{
-			System.out.println("Output path specified -> [ " + filePathString + " ] exists");
+			file_exists = true;
+			System.out.println("Path exists ----> " + filePathString);
 			}
 		else
 			{
-			System.out.println("Output path specified -> [ " + filePathString + " ] does not exist");
-			file_exists = false; // Just takes one false to make it false
+			System.out.println("Path does not exist -> " + filePathString);
 			}
-
 		return file_exists;
 		}
 
