@@ -23,7 +23,6 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
 import org.apache.commons.codec.binary.Base64;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -42,81 +41,75 @@ public class XMLInjector
 
 	public static void main(String[] args) throws Exception
 		{
-
-		if (files_exist(args))
-			{
-			String input_filename;
-			String outpath;
-
-			input_filename = args[0];
-			outpath = args[1];
-
-			process_files(input_filename, outpath);
-
-			System.out.println("Program successfully completed.");
-			}
-		else
-			{
-			System.out.println("Program did not run successfully.");
-			}
-		}
-
-	private static Boolean files_exist(String[] args)
-		{
-		Boolean files_exist = true;
 		String input_filename;
-		String output_filename;
+		String outpath;
+		Boolean input_file_exists;
+		Boolean outpath_exists;
 
-		input_filename = "";
-
-		if (args.length >= 2)
-			{
-			String filePathString;
-
-			for (int i = 0; i < 1; i++)
-				{
-				input_filename = args[i];
-
-				filePathString = BASE_PATH + input_filename;
-
-				File f = new File(filePathString);
-				if (f.exists() && !f.isDirectory())
-					{
-					System.out.println("Input file specified -> [ " + filePathString + " ] exists");
-					}
-				else
-					{
-					System.out.println("Input file specified -> [ " + filePathString + " ] does not exist");
-					files_exist = false; // Just takes one false to make it false
-					}
-				}
-
-			for (int i = 1; i < 2; i++)
-				{
-				String output_path;
-				output_path = args[i];
-
-				filePathString = output_path;
-
-				File f = new File(filePathString);
-				if (f.exists() && f.isDirectory())
-					{
-					System.out.println("Output path specified -> [ " + filePathString + " ] exists");
-					}
-				else
-					{
-					System.out.println("Output path specified -> [ " + filePathString + " ] does not exist");
-					files_exist = false; // Just takes one false to make it false
-					}
-				}
-			}
-		else
+		if (args.length != 2)
 			{
 			System.out.println("Number of arguments detected on command line is incorrect : " + args.length);
 			show_usage();
 			}
+		else
+			{
+			input_filename = args[0];
+			outpath = args[1];
 
-		return files_exist;
+			input_file_exists = check_file_exists(BASE_PATH, input_filename);
+			outpath_exists = create_output_file(outpath);
+
+			if (input_file_exists && outpath_exists)
+				{
+
+				process_files(input_filename, outpath);
+
+				System.out.println("Program successfully completed.");
+				}
+			else
+				{
+				System.out.println("Program did not run successfully.");
+				}
+			}
+		}
+
+	private static Boolean check_file_exists(String path, String filename)
+		{
+		Boolean file_exists = true;
+		String filePathString;
+
+		filePathString = path + filename;
+
+		File f = new File(filePathString);
+		if (f.exists() && !f.isDirectory())
+			{
+			System.out.println("Argument file specified -> [ " + filePathString + " ] exists");
+			}
+		else
+			{
+			System.out.println("Argument file specified -> [ " + filePathString + " ] does not exist");
+			file_exists = false; // Just takes one false to make it false
+			}
+
+		return file_exists;
+		}
+
+	private static Boolean create_output_file(String filePathString)
+		{
+		Boolean file_exists = true;
+
+		File f = new File(filePathString);
+		if (f.exists() && f.isDirectory())
+			{
+			System.out.println("Output path specified -> [ " + filePathString + " ] exists");
+			}
+		else
+			{
+			System.out.println("Output path specified -> [ " + filePathString + " ] does not exist");
+			file_exists = false; // Just takes one false to make it false
+			}
+
+		return file_exists;
 		}
 
 	private static void show_usage()

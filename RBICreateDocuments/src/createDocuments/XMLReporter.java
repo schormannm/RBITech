@@ -2,11 +2,14 @@ package createDocuments;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.OutputStream;
 
 import javax.xml.bind.JAXBContext;
 
 import org.apache.commons.io.FilenameUtils;
 import org.docx4j.Docx4J;
+import org.docx4j.convert.out.FOSettings;
+import org.docx4j.model.fields.FieldUpdater;
 import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
 
 //
@@ -17,20 +20,19 @@ import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
 //
 public class XMLReporter
 	{
-	public static JAXBContext context = org.docx4j.jaxb.Context.jc;
+	public static JAXBContext	context		= org.docx4j.jaxb.Context.jc;
 
-	static String filepathprefix;
+	static String				filepathprefix;
 
 	/**
 	 * @param args
 	 */
 
-	public static final String	BASE_PATH	= "";			// Used for testing
-	public static final String	OUT_PATH	= "Reports/";
+	// static String inputfilepath = System.getProperty("user.dir") + "/sample-docs/word/sample-docx.docx";
 
-	public static final String	EXTENSION			= ".docx";
-	public static final String	PARENT_KEY			= "PARENT_KEY";
-	public static final String	REPEAT_INDICATOR	= "SET-OF-";
+	public static final String	BASE_PATH	= "";							// Used for
+																			// testing
+	public static final String	OUT_PATH	= "Reports/";
 
 	public static void main(String[] args) throws Exception
 		{
@@ -141,11 +143,78 @@ public class XMLReporter
 			// If a document doesn't include the Opendope definitions, eg. the XPathPart,
 			// then the only thing you can do is insert the xml
 			// the example document binding-simple.docx doesn't have an XPathPart....
-			Docx4J.bind(wordMLPackage, xmlStream, Docx4J.FLAG_BIND_INSERT_XML | Docx4J.FLAG_BIND_BIND_XML);
+			Docx4J.bind(wordMLPackage, xmlStream, Docx4J.FLAG_NONE);
 
 			// Save the document
 			Docx4J.save(wordMLPackage, new File(output_DOCX), Docx4J.FLAG_BIND_REMOVE_XML);
 			System.out.println("Saved: " + output_DOCX);
+
+			// ================================================================================
+			// How about we try to output this thing to a PDF
+			//
+
+			// Refresh the values of DOCPROPERTY fields
+			FieldUpdater updater = new FieldUpdater(wordMLPackage);
+			// --updater.update(true);
+
+			// Set up font mapper (optional)
+			// -- Mapper fontMapper = new IdentityPlusMapper();
+			// -- wordMLPackage.setFontMapper(fontMapper);
+
+			// -- PhysicalFont font = PhysicalFonts.get("Arial Unicode MS");
+
+			// make sure this is in your regex (if any)!!!
+			// if (font!=null) {
+			// fontMapper.put("Times New Roman", font);
+			// fontMapper.put("Arial", font);
+			// }
+			// fontMapper.put("Libian SC Regular", PhysicalFonts.get("SimSun"));
+
+			// FO exporter setup (required)
+			// .. the FOSettings object
+			FOSettings foSettings = Docx4J.createFOSettings();
+
+			foSettings.setWmlPackage(wordMLPackage);
+
+			// Document format:
+			// The default implementation of the FORenderer that uses Apache Fop will output
+			// a PDF document if nothing is passed via
+			// foSettings.setApacheFopMime(apacheFopMime)
+			// apacheFopMime can be any of the output formats defined in org.apache.fop.apps.MimeConstants eg
+			// org.apache.fop.apps.MimeConstants.MIME_FOP_IF or
+			// FOSettings.INTERNAL_FO_MIME if you want the fo document as the result.
+			// foSettings.setApacheFopMime(FOSettings.INTERNAL_FO_MIME);
+
+			String output_PDF = BASE_PATH + getFilenameWithoutExtension(filename) + ".pdf";
+			// exporter writes to an OutputStream.
+			OutputStream os = new java.io.FileOutputStream(output_PDF);
+
+			// Specify whether PDF export uses XSLT or not to create the FO
+			// (XSLT takes longer, but is more complete).
+
+			// Don't care what type of exporter you use
+			Docx4J.toFO(foSettings, os, Docx4J.FLAG_EXPORT_PREFER_XSL);
+
+			// Prefer the exporter, that uses a xsl transformation
+			// Docx4J.toFO(foSettings, os, Docx4J.FLAG_EXPORT_PREFER_XSL);
+
+			// Prefer the exporter, that doesn't use a xsl transformation (= uses a visitor)
+			// .. faster, but not yet at feature parity
+			// Docx4J.toFO(foSettings, os, Docx4J.FLAG_EXPORT_PREFER_NONXSL);
+
+			System.out.println("Saved PDF to : " + output_PDF);
+
+			// Clean up, so any ObfuscatedFontPart temp files can be deleted
+
+			// if (wordMLPackage.getMainDocumentPart().getFontTablePart() != null)
+			// {
+			// wordMLPackage.getMainDocumentPart().getFontTablePart().deleteEmbeddedFontTempFiles();
+			// }
+
+			// This would also do it, via finalize() methods
+			updater = null;
+			// -- foSettings = null;
+			wordMLPackage = null;
 			}
 		}
 
