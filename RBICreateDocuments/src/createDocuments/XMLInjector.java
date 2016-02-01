@@ -37,8 +37,6 @@ import org.xml.sax.SAXException;
 public class XMLInjector
 	{
 
-	public static final String BASE_PATH = ""; // Used for testing
-
 	public static void main(String[] args) throws Exception
 		{
 		String input_filename;
@@ -46,7 +44,7 @@ public class XMLInjector
 		Boolean input_file_exists;
 		Boolean outpath_exists;
 
-		if (args.length != 2)
+		if (args.length < 2)
 			{
 			System.out.println("Number of arguments detected on command line is incorrect : " + args.length);
 			show_usage();
@@ -54,10 +52,23 @@ public class XMLInjector
 		else
 			{
 			String input_path;
+			String mog_active;
+			String mog_path = "";
+
 			input_filename = args[0];
 			outpath = args[1];
 
-			input_path = BASE_PATH + input_filename;
+			String current = System.getProperty("user.dir");
+			if (args.length == 3)
+				{
+				mog_active = args[2];
+				mog_path = current + "/mog/";
+				}
+			else
+				mog_path = current;
+
+			System.out.println(mog_path);
+			input_path = mog_path + input_filename;
 			input_file_exists = check_file_exists(input_path);
 
 			outpath_exists = check_path_exists(outpath);
@@ -66,7 +77,7 @@ public class XMLInjector
 
 			if (input_file_exists && outpath_exists)
 				{
-				process_files(input_filename, outpath);
+				process_files(input_path, outpath);
 				System.out.println("Program successfully completed.");
 				}
 			else
@@ -118,7 +129,7 @@ public class XMLInjector
 	public static void process_files(String filename, String outpath) throws Exception
 		{
 
-		String infile = BASE_PATH + filename;
+		String infile = filename;
 
 		try
 			{
@@ -238,7 +249,7 @@ public class XMLInjector
 					System.out.println("Found a JPG node -> " + nodes.getNodeName() + " : " + nodes.getTextContent());
 					String filename = nodes.getTextContent();
 
-					String filePathString = BASE_PATH + filename;
+					String filePathString = filename;
 
 					File f = new File(filePathString);
 					if (f.exists() && !f.isDirectory())
