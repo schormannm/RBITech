@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb45b94d-4688-4c9b-b06e-581a311f25d8" name="Default" comment="Commiting from IDEA">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.project" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/.classpath" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/.classpath" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/.hgignore" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/.hgignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/.hgtags" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/.hgtags" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/.project" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/.project" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/.tx/config" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/.tx/config" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/AndroidManifest.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/LICENSE.txt" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/LICENSE.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/AndroidManifest.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/RBICollect-1-4-5.apk" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/RBICollect-1-4-5.apk" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/classes.dex" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/classes.dex" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/classes/.gitignore" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/classes/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/android-support-v4-61412072788fb67d8422df0ec155ff74.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/android-support-v4-61412072788fb67d8422df0ec155ff74.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/android-support-v4-b4650f45c586b97c75d910d7ebaedfbd.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/android-support-v4-b4650f45c586b97c75d910d7ebaedfbd.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/apache-mime4j-0.6-595605affeaa3bbc763c3faa1c233af3.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/apache-mime4j-0.6-595605affeaa3bbc763c3faa1c233af3.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/apache-mime4j-0.6-9ce48fcd8f81638a939def56cfefb0c7.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/apache-mime4j-0.6-9ce48fcd8f81638a939def56cfefb0c7.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/commons-io-2.4-294b7242f0722c7b7bd07cca81bbb24a.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/commons-io-2.4-294b7242f0722c7b7bd07cca81bbb24a.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/commons-io-2.4-3fc7738f1fdd9e989d58095bb7b18f2a.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/commons-io-2.4-3fc7738f1fdd9e989d58095bb7b18f2a.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/google-api-client-1.15.0-rc-21dd1b538c88844356813b6598a54dc0.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/google-api-client-1.15.0-rc-21dd1b538c88844356813b6598a54dc0.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/google-api-client-1.15.0-rc-cf9c4e1b79c3f716db76e2f9ad647a9a.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/google-api-client-1.15.0-rc-cf9c4e1b79c3f716db76e2f9ad647a9a.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/google-api-client-android-1.17.0-rc-643129f63660fbf29241a8561ab6ba65.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/google-api-client-android-1.17.0-rc-643129f63660fbf29241a8561ab6ba65.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/google-api-client-android-1.17.0-rc-cf1ba4db60a5727ec1017d1f876e1120.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/google-api-client-android-1.17.0-rc-cf1ba4db60a5727ec1017d1f876e1120.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/google-api-services-drive-v2-rev113-1.17.0-rc-c4eacda897f6d74726d7b337cb1b33c9.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/google-api-services-drive-v2-rev113-1.17.0-rc-c4eacda897f6d74726d7b337cb1b33c9.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/google-api-services-drive-v2-rev113-1.17.0-rc-e1b352a4474977bf2ea67dc1bf790bee.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/google-api-services-drive-v2-rev113-1.17.0-rc-e1b352a4474977bf2ea67dc1bf790bee.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/google-http-client-1.15.0-rc-ccb03ab4cc91ae6fabca0e6bcd74423a.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/google-http-client-1.15.0-rc-ccb03ab4cc91ae6fabca0e6bcd74423a.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/google-http-client-1.15.0-rc-fe2062d09ed43d26fe8435b994014261.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/google-http-client-1.15.0-rc-fe2062d09ed43d26fe8435b994014261.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/google-http-client-android-1.17.0-rc-48bf422207ea3913d1096f01eb9f426f.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/google-http-client-android-1.17.0-rc-48bf422207ea3913d1096f01eb9f426f.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/google-http-client-android-1.17.0-rc-95dfff35d76a72bfe39da4911ba94999.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/google-http-client-android-1.17.0-rc-95dfff35d76a72bfe39da4911ba94999.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/google-http-client-gson-1.17.0-rc-5375455db30b9c9e27ac9c2d94f697fa.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/google-http-client-gson-1.17.0-rc-5375455db30b9c9e27ac9c2d94f697fa.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/google-http-client-gson-1.17.0-rc-fc3fe181cca2c8657e24c7560de1e3dc.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/google-http-client-gson-1.17.0-rc-fc3fe181cca2c8657e24c7560de1e3dc.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/google-oauth-client-1.17.0-rc-afe0bc229c162a09917dd6510194832d.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/google-oauth-client-1.17.0-rc-afe0bc229c162a09917dd6510194832d.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/google-oauth-client-1.17.0-rc-cfc0997e5d0af54e8a6cd9e2133a9a69.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/google-oauth-client-1.17.0-rc-cfc0997e5d0af54e8a6cd9e2133a9a69.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/gson-2.1-65fda6f41d1ce083d6c8c8e86f034bed.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/gson-2.1-65fda6f41d1ce083d6c8c8e86f034bed.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/gson-2.1-9c4fb335726d212557182db2424de9fb.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/gson-2.1-9c4fb335726d212557182db2424de9fb.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/httpclientandroidlib-4.2.1-1cb24c5b698cc9a66b5ff9b597f3ebe4.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/httpclientandroidlib-4.2.1-1cb24c5b698cc9a66b5ff9b597f3ebe4.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/httpclientandroidlib-4.2.1-1cf51259ce265f9aace37695b25fc125.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/httpclientandroidlib-4.2.1-1cf51259ce265f9aace37695b25fc125.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/httpmime-4.0-1c648fae46c75af69780df05640eaabf.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/httpmime-4.0-1c648fae46c75af69780df05640eaabf.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/httpmime-4.0-cbc1456235b9aaeb722f3e9c7c20b626.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/httpmime-4.0-cbc1456235b9aaeb722f3e9c7c20b626.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/javarosa-libraries-2015-01-10-44c41400d20730fdea0fdc3809aeabc0.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/javarosa-libraries-2015-01-10-44c41400d20730fdea0fdc3809aeabc0.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/javarosa-libraries-2015-01-10-b361fb3cfa0c5c65f25eceae9f649f74.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/javarosa-libraries-2015-01-10-b361fb3cfa0c5c65f25eceae9f649f74.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/joda-time-2.0-065db2210555929ae8b81125e49d844e.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/joda-time-2.0-065db2210555929ae8b81125e49d844e.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/joda-time-2.0-eb37a7a15c421aa1f704ed82db637d11.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/joda-time-2.0-eb37a7a15c421aa1f704ed82db637d11.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/kxml2-2.3.0-1773d859c198e7e9f3f1ca970e83f70d.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/kxml2-2.3.0-1773d859c198e7e9f3f1ca970e83f70d.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/kxml2-2.3.0-272922a00e41373901cda52cccd29c46.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/kxml2-2.3.0-272922a00e41373901cda52cccd29c46.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/opencsv-2.3-4d01f7ef383c6707fa03ab8c20e612cb.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/opencsv-2.3-4d01f7ef383c6707fa03ab8c20e612cb.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/dexedLibs/opencsv-2.3-c4bfd5343e1470c22452a6aa97ca1614.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/dexedLibs/opencsv-2.3-c4bfd5343e1470c22452a6aa97ca1614.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/jarlist.cache" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/jarlist.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/expander_ic_maximized.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/expander_ic_maximized.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/expander_ic_minimized.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/expander_ic_minimized.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/expander_ic_right.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/expander_ic_right.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_back.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_back.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_download.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_download.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_folder.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_folder.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_maps_indicator_current_position.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_maps_indicator_current_position.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_backward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_backward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_clear_playlist.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_clear_playlist.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_close_clear_cancel.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_close_clear_cancel.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_forward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_forward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_goto.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_goto.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_login.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_login.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_manage.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_manage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_mark.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_mark.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_mylocation.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_mylocation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_preferences.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_preferences.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_refresh.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_refresh.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_save.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_save.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_send.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_send.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_start_conversation.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/ic_menu_start_conversation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-hdpi/notes.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-hdpi/notes.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/expander_ic_maximized.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/expander_ic_maximized.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/expander_ic_minimized.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/expander_ic_minimized.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/expander_ic_right.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/expander_ic_right.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_maps_indicator_current_position.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_maps_indicator_current_position.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_backward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_backward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_clear_playlist.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_clear_playlist.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_close_clear_cancel.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_close_clear_cancel.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_forward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_forward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_goto.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_goto.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_login.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_login.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_manage.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_manage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_mark.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_mark.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_mylocation.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_mylocation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_preferences.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_preferences.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_refresh.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_refresh.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_save.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_save.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_send.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_send.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_start_conversation.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-ldpi/ic_menu_start_conversation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/advance.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/advance.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/backup.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/backup.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/expander_ic_maximized.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/expander_ic_maximized.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/expander_ic_minimized.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/expander_ic_minimized.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/expander_ic_right.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/expander_ic_right.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_action_action_search.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_action_action_search.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_maps_indicator_current_position.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_maps_indicator_current_position.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_backward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_backward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_clear_playlist.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_clear_playlist.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_close_clear_cancel.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_close_clear_cancel.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_forward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_forward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_goto.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_goto.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_login.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_login.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_manage.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_manage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_mark.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_mark.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_mylocation.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_mylocation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_preferences.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_preferences.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_refresh.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_refresh.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_save.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_save.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_send.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_send.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_start_conversation.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/ic_menu_start_conversation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/left_arrow.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/left_arrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-mdpi/notes.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-mdpi/notes.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/expander_ic_maximized.9.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/expander_ic_maximized.9.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/expander_ic_minimized.9.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/expander_ic_minimized.9.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/expander_ic_right.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/expander_ic_right.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_action_action_search.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_action_action_search.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_back.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_back.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_download.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_download.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_folder.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_folder.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_maps_indicator_current_position.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_maps_indicator_current_position.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_backward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_backward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_clear_playlist.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_clear_playlist.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_close_clear_cancel.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_close_clear_cancel.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_forward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_forward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_goto.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_goto.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_login.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_login.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_manage.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_manage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_mark.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_mark.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_mylocation.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_mylocation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_preferences.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_preferences.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_refresh.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_refresh.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_save.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_save.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_send.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_send.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_start_conversation.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/ic_menu_start_conversation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable-xhdpi/notes.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable-xhdpi/notes.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable/ic_menu_backward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable/ic_menu_backward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable/ic_menu_forward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable/ic_menu_forward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/res/crunch/drawable/ic_menu_save.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/res/crunch/drawable/ic_menu_save.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/bin/resources.ap_" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/bin/resources.ap_" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/default.properties" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/default.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/docs/data-preload/Sample-Preloading.zip" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/docs/data-preload/Sample-Preloading.zip" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/docs/data-preload/Sample-SearchAndSelect.zip" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/docs/data-preload/Sample-SearchAndSelect.zip" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/docs/data-preload/tutorial.txt" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/docs/data-preload/tutorial.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/docs/external-apps/tutorial.txt" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/docs/external-apps/tutorial.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/gen/.gitignore" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/gen/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/android-support-v4.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/android-support-v4.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/apache-mime4j-0.6.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/apache-mime4j-0.6.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/commons-io-2.4.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/commons-io-2.4.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/google-api-client-1.15.0-rc.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/google-api-client-1.15.0-rc.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/google-api-client-android-1.17.0-rc.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/google-api-client-android-1.17.0-rc.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/google-api-services-drive-v2-rev113-1.17.0-rc.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/google-api-services-drive-v2-rev113-1.17.0-rc.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/google-http-client-1.15.0-rc.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/google-http-client-1.15.0-rc.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/google-http-client-android-1.17.0-rc.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/google-http-client-android-1.17.0-rc.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/google-http-client-gson-1.17.0-rc.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/google-http-client-gson-1.17.0-rc.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/google-oauth-client-1.17.0-rc.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/google-oauth-client-1.17.0-rc.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/gson-2.1.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/gson-2.1.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/httpclientandroidlib-4.2.1.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/httpclientandroidlib-4.2.1.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/httpmime-4.0.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/httpmime-4.0.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/javarosa-libraries-2015-01-10.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/javarosa-libraries-2015-01-10.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/joda-time-2.0.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/joda-time-2.0.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/kxml2-2.3.0.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/kxml2-2.3.0.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/libs/opencsv-2.3.jar" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/libs/opencsv-2.3.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/lint.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/lint.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/proguard-project.txt" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/proguard-project.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/project.properties" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/project.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/anim/fade_in.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/anim/fade_in.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/anim/fade_out.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/anim/fade_out.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/anim/push_left_in.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/anim/push_left_in.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/anim/push_left_out.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/anim/push_left_out.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/anim/push_right_in.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/anim/push_right_in.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/anim/push_right_out.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/anim/push_right_out.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/anim/start_arrow.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/anim/start_arrow.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/expander_ic_maximized.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/expander_ic_maximized.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/expander_ic_minimized.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/expander_ic_minimized.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/expander_ic_right.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/expander_ic_right.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_back.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_back.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_download.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_download.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_folder.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_folder.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_maps_indicator_current_position.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_maps_indicator_current_position.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_menu_backward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_menu_backward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_menu_clear_playlist.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_menu_clear_playlist.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_menu_close_clear_cancel.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_menu_close_clear_cancel.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_menu_forward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_menu_forward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_menu_goto.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_menu_goto.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_menu_login.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_menu_login.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_menu_manage.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_menu_manage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_menu_mark.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_menu_mark.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_menu_mylocation.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_menu_mylocation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_menu_preferences.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_menu_preferences.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_menu_refresh.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_menu_refresh.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_menu_save.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_menu_save.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_menu_send.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_menu_send.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/ic_menu_start_conversation.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/ic_menu_start_conversation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-hdpi/notes.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-hdpi/notes.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/expander_ic_maximized.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/expander_ic_maximized.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/expander_ic_minimized.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/expander_ic_minimized.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/expander_ic_right.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/expander_ic_right.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/ic_maps_indicator_current_position.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/ic_maps_indicator_current_position.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/ic_menu_backward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/ic_menu_backward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/ic_menu_clear_playlist.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/ic_menu_clear_playlist.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/ic_menu_close_clear_cancel.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/ic_menu_close_clear_cancel.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/ic_menu_forward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/ic_menu_forward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/ic_menu_goto.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/ic_menu_goto.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/ic_menu_login.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/ic_menu_login.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/ic_menu_manage.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/ic_menu_manage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/ic_menu_mark.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/ic_menu_mark.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/ic_menu_mylocation.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/ic_menu_mylocation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/ic_menu_preferences.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/ic_menu_preferences.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/ic_menu_refresh.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/ic_menu_refresh.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/ic_menu_save.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/ic_menu_save.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/ic_menu_send.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/ic_menu_send.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-ldpi/ic_menu_start_conversation.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-ldpi/ic_menu_start_conversation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/advance.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/advance.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/backup.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/backup.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/expander_ic_maximized.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/expander_ic_maximized.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/expander_ic_minimized.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/expander_ic_minimized.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/expander_ic_right.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/expander_ic_right.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_action_action_search.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_action_action_search.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_maps_indicator_current_position.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_maps_indicator_current_position.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_menu_backward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_menu_backward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_menu_clear_playlist.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_menu_clear_playlist.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_menu_close_clear_cancel.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_menu_close_clear_cancel.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_menu_forward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_menu_forward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_menu_goto.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_menu_goto.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_menu_login.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_menu_login.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_menu_manage.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_menu_manage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_menu_mark.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_menu_mark.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_menu_mylocation.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_menu_mylocation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_menu_preferences.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_menu_preferences.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_menu_refresh.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_menu_refresh.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_menu_save.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_menu_save.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_menu_send.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_menu_send.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/ic_menu_start_conversation.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/ic_menu_start_conversation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/left_arrow.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/left_arrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-mdpi/notes.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-mdpi/notes.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/expander_ic_maximized.9.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/expander_ic_maximized.9.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/expander_ic_minimized.9.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/expander_ic_minimized.9.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/expander_ic_right.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/expander_ic_right.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_action_action_search.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_action_action_search.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_back.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_back.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_download.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_download.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_folder.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_folder.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_launcher.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_maps_indicator_current_position.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_maps_indicator_current_position.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_menu_backward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_menu_backward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_menu_clear_playlist.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_menu_clear_playlist.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_menu_close_clear_cancel.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_menu_close_clear_cancel.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_menu_forward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_menu_forward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_menu_goto.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_menu_goto.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_menu_login.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_menu_login.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_menu_manage.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_menu_manage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_menu_mark.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_menu_mark.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_menu_mylocation.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_menu_mylocation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_menu_preferences.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_menu_preferences.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_menu_refresh.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_menu_refresh.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_menu_save.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_menu_save.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_menu_send.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_menu_send.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/ic_menu_start_conversation.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/ic_menu_start_conversation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable-xhdpi/notes.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable-xhdpi/notes.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable/ic_menu_backward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable/ic_menu_backward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable/ic_menu_forward.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable/ic_menu_forward.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable/ic_menu_save.png" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable/ic_menu_save.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/drawable/thumb.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/drawable/thumb.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/chooser_list_layout.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/chooser_list_layout.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/custom_spinner_item.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/custom_spinner_item.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/data_manage_list.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/data_manage_list.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/draw_layout.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/draw_layout.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/drive_layout.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/drive_layout.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/drive_row.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/drive_row.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/form_entry.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/form_entry.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/form_entry_end.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/form_entry_end.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/form_entry_start.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/form_entry_start.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/form_manage_list.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/form_manage_list.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/geopoint_layout.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/geopoint_layout.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/geopoint_layout_sdk7.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/geopoint_layout_sdk7.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/hierarchy_layout.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/hierarchy_layout.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/instance_uploader_list.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/instance_uploader_list.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/list_view_filled.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/list_view_filled.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/main_menu.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/main_menu.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/notification_layout.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/notification_layout.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/password_dialog_layout.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/password_dialog_layout.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/quick_select_layout.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/quick_select_layout.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/remote_file_manage_list.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/remote_file_manage_list.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/server_auth_dialog.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/server_auth_dialog.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/splash_screen.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/splash_screen.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/toast_view.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/toast_view.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/two_item.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/two_item.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/two_item_image.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/two_item_image.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/layout/two_item_multiple_choice.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/layout/two_item_multiple_choice.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-ar/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-ar/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-ca/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-ca/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-cs/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-cs/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-de/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-de/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-es-rSV/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-es-rSV/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-es/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-es/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-fa/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-fa/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-fr/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-fr/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-ha/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-ha/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-hi-rIN/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-hi-rIN/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-id/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-id/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-in/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-in/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-it/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-it/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-ja/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-ja/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-ka/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-ka/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-km/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-km/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-kr-rUG/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-kr-rUG/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-lo-rLA/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-lo-rLA/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-lt/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-lt/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-mg/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-mg/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-my/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-my/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-ne-rNP/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-ne-rNP/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-nl/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-nl/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-no/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-no/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-pl/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-pl/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-ps/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-ps/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-pt/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-pt/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-ro/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-ro/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-ru/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-ru/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-sq-rAL/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-sq-rAL/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-sq/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-sq/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-sw-rKE/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-sw-rKE/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-sw/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-sw/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-th-rTH/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-th-rTH/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-tl-rPH/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-tl-rPH/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-tl/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-tl/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-tr/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-tr/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-ur-rPK/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-ur-rPK/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-v11/styles.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-v11/styles.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-v11/theme.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-v11/theme.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-v14/styles.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-v14/styles.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-vi/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-vi/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values-zh/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values-zh/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values/arrays.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values/arrays.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values/colors.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values/colors.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values/strings.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values/styles.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values/styles.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values/theme.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values/theme.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/values/untranslated.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/values/untranslated.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/xml/admin_preferences.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/xml/admin_preferences.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/xml/aggregate_preferences.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/xml/aggregate_preferences.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/xml/gme_preferences.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/xml/gme_preferences.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/xml/other_preferences.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/xml/other_preferences.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/res/xml/preferences.xml" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/res/xml/preferences.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/AndroidShortcuts.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/AndroidShortcuts.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/BearingActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/BearingActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/DataManagerList.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/DataManagerList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/DrawActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/DrawActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/FileManagerTabs.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/FileManagerTabs.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/FormChooserList.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/FormChooserList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/FormDownloadList.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/FormDownloadList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/FormEntryActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/FormEntryActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/FormHierarchyActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/FormHierarchyActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/FormManagerList.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/FormManagerList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/GeoPointActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/GeoPointActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/GeoPointMapActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/GeoPointMapActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/GeoPointMapActivitySdk7.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/GeoPointMapActivitySdk7.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/GoogleDriveActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/GoogleDriveActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/GoogleMapsEngineUploaderActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/GoogleMapsEngineUploaderActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/InstanceChooserList.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/InstanceChooserList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/InstanceChooserTabs.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/InstanceChooserTabs.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/InstanceUploaderActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/InstanceUploaderActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/InstanceUploaderList.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/InstanceUploaderList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/MainMenuActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/MainMenuActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/NotificationActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/NotificationActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/activities/SplashScreenActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/activities/SplashScreenActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/adapters/FileArrayAdapter.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/adapters/FileArrayAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/adapters/HierarchyListAdapter.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/adapters/HierarchyListAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/application/Collect.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/application/Collect.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/database/ActivityLogger.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/database/ActivityLogger.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/database/ItemsetDbAdapter.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/database/ItemsetDbAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/database/ODKSQLiteOpenHelper.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/database/ODKSQLiteOpenHelper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/exception/EncryptionException.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/exception/EncryptionException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/exception/ExternalDataException.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/exception/ExternalDataException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/exception/ExternalParamsException.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/exception/ExternalParamsException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/exception/FormException.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/exception/FormException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/exception/GeoPointNotFoundException.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/exception/GeoPointNotFoundException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/exception/InvalidSyntaxException.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/exception/InvalidSyntaxException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/exception/JavaRosaException.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/exception/JavaRosaException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/exception/TaskCancelledException.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/exception/TaskCancelledException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/external/ExternalAnswerResolver.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/external/ExternalAnswerResolver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/external/ExternalAppsUtils.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/external/ExternalAppsUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/external/ExternalDataHandler.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/external/ExternalDataHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/external/ExternalDataManager.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/external/ExternalDataManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/external/ExternalDataManagerImpl.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/external/ExternalDataManagerImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/external/ExternalDataReader.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/external/ExternalDataReader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/external/ExternalDataReaderImpl.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/external/ExternalDataReaderImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/external/ExternalDataUtil.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/external/ExternalDataUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/external/ExternalSQLiteOpenHelper.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/external/ExternalSQLiteOpenHelper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/external/ExternalSelectChoice.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/external/ExternalSelectChoice.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/external/handler/ExternalDataHandlerBase.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/external/handler/ExternalDataHandlerBase.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/external/handler/ExternalDataHandlerPull.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/external/handler/ExternalDataHandlerPull.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/external/handler/ExternalDataHandlerSearch.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/external/handler/ExternalDataHandlerSearch.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/external/handler/ExternalDataSearchType.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/external/handler/ExternalDataSearchType.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/listeners/AdvanceToNextListener.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/listeners/AdvanceToNextListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/listeners/DeleteFormsListener.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/listeners/DeleteFormsListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/listeners/DeleteInstancesListener.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/listeners/DeleteInstancesListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/listeners/DiskSyncListener.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/listeners/DiskSyncListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/listeners/FormDownloaderListener.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/listeners/FormDownloaderListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/listeners/FormListDownloaderListener.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/listeners/FormListDownloaderListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/listeners/FormLoaderListener.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/listeners/FormLoaderListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/listeners/FormSavedListener.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/listeners/FormSavedListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/listeners/GoogleDriveFormDownloadListener.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/listeners/GoogleDriveFormDownloadListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/listeners/InstanceUploaderListener.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/listeners/InstanceUploaderListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/listeners/SavePointListener.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/listeners/SavePointListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/listeners/TaskListener.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/listeners/TaskListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/logic/DriveListItem.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/logic/DriveListItem.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/logic/FileReference.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/logic/FileReference.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/logic/FileReferenceFactory.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/logic/FileReferenceFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/logic/FormController.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/logic/FormController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/logic/FormDetails.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/logic/FormDetails.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/logic/HierarchyElement.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/logic/HierarchyElement.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/logic/PropertyManager.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/logic/PropertyManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/AlbumEntry.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/AlbumEntry.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/AlbumFeed.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/AlbumFeed.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/Author.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/Author.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/Category.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/Category.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/Content.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/Content.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/Entry.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/Entry.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/Feed.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/Feed.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/GDataClient.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/GDataClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/GDataXmlClient.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/GDataXmlClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/Link.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/Link.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/MediaContent.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/MediaContent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/MediaGroup.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/MediaGroup.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/PhotoEntry.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/PhotoEntry.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/PicasaClient.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/PicasaClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/PicasaUrl.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/PicasaUrl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/Response.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/Response.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/picasa/UserFeed.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/picasa/UserFeed.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/preferences/AdminPreferencesActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/preferences/AdminPreferencesActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/preferences/AggregatePreferencesActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/preferences/AggregatePreferencesActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/preferences/GMEPreferencesActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/preferences/GMEPreferencesActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/preferences/OtherPreferencesActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/preferences/OtherPreferencesActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/preferences/PasswordDialogPreference.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/preferences/PasswordDialogPreference.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/preferences/PreferencesActivity.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/preferences/PreferencesActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/provider/FormsProvider.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/provider/FormsProvider.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/provider/FormsProviderAPI.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/provider/FormsProviderAPI.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/provider/InstanceProvider.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/provider/InstanceProvider.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/provider/InstanceProviderAPI.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/provider/InstanceProviderAPI.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/receivers/NetworkReceiver.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/receivers/NetworkReceiver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/tasks/DeleteFormsTask.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/tasks/DeleteFormsTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/tasks/DeleteInstancesTask.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/tasks/DeleteInstancesTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/tasks/DiskSyncTask.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/tasks/DiskSyncTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/tasks/DownloadFormListTask.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/tasks/DownloadFormListTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/tasks/DownloadFormsTask.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/tasks/DownloadFormsTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/tasks/FormLoaderTask.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/tasks/FormLoaderTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/tasks/GoogleMapsEngineAbstractUploader.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/tasks/GoogleMapsEngineAbstractUploader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/tasks/GoogleMapsEngineTask.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/tasks/GoogleMapsEngineTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/tasks/InstanceUploaderTask.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/tasks/InstanceUploaderTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/tasks/ProgressNotifier.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/tasks/ProgressNotifier.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/tasks/SavePointTask.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/tasks/SavePointTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/tasks/SaveResult.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/tasks/SaveResult.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/tasks/SaveToDiskTask.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/tasks/SaveToDiskTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/utilities/AgingCredentialsProvider.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/utilities/AgingCredentialsProvider.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/utilities/Base64Wrapper.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/utilities/Base64Wrapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/utilities/ColorPickerDialog.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/utilities/ColorPickerDialog.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/utilities/CompatibilityUtils.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/utilities/CompatibilityUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/utilities/DocumentFetchResult.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/utilities/DocumentFetchResult.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/utilities/EncryptionUtils.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/utilities/EncryptionUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/utilities/FileUtils.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/utilities/FileUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/utilities/InfoLogger.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/utilities/InfoLogger.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/utilities/MediaUtils.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/utilities/MediaUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/utilities/UrlUtils.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/utilities/UrlUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/utilities/VersionHidingCursorAdapter.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/utilities/VersionHidingCursorAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/utilities/WebUtils.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/utilities/WebUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/utilities/ZipUtils.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/utilities/ZipUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/views/ArrowAnimationView.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/views/ArrowAnimationView.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/views/AudioButton.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/views/AudioButton.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/views/DynamicListPreference.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/views/DynamicListPreference.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/views/ExpandedHeightGridView.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/views/ExpandedHeightGridView.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/views/HierarchyElementView.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/views/HierarchyElementView.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/views/MediaLayout.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/views/MediaLayout.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/views/ODKView.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/views/ODKView.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/views/TwoItemMultipleChoiceView.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/views/TwoItemMultipleChoiceView.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/AlignedImageWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/AlignedImageWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/AnnotateWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/AnnotateWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/AudioWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/AudioWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/AutoCompleteWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/AutoCompleteWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/BarcodeWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/BarcodeWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/BearingWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/BearingWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/DateTimeWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/DateTimeWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/DateWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/DateWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/DecimalWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/DecimalWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/DrawWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/DrawWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/ExDecimalWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/ExDecimalWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/ExIntegerWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/ExIntegerWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/ExPrinterWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/ExPrinterWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/ExStringWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/ExStringWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/GeoPointWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/GeoPointWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/GridMultiWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/GridMultiWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/GridWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/GridWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/IBinaryWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/IBinaryWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/ImageWebViewWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/ImageWebViewWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/ImageWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/ImageWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/IntegerWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/IntegerWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/ItemsetWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/ItemsetWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/LabelWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/LabelWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/ListMultiWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/ListMultiWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/ListWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/ListWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/QuestionWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/QuestionWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/SelectMultiWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/SelectMultiWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/SelectOneAutoAdvanceWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/SelectOneAutoAdvanceWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/SelectOneWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/SelectOneWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/SignatureWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/SignatureWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/SpinnerMultiWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/SpinnerMultiWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/SpinnerWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/SpinnerWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/StringNumberWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/StringNumberWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/StringWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/StringWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/TimeWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/TimeWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/TriggerWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/TriggerWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/UrlWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/UrlWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/VideoWidget.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/VideoWidget.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICollect-1-4-5/src/org/odk/collect/android/widgets/WidgetFactory.java" afterPath="$PROJECT_DIR$/../RBICollect-1-4-5/src/org/odk/collect/android/widgets/WidgetFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/.project" afterPath="$PROJECT_DIR$/.project" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/.settings/org.eclipse.ltk.core.refactoring.prefs" afterPath="$PROJECT_DIR$/.settings/org.eclipse.ltk.core.refactoring.prefs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/RBICreateDocuments.iml" afterPath="$PROJECT_DIR$/RBICreateDocuments.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/SeeOfXML.xml" afterPath="$PROJECT_DIR$/SeeOfXML.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/_resources/docx4j.properties" afterPath="$PROJECT_DIR$/_resources/docx4j.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/_resources/fop-substitutions.xml" afterPath="$PROJECT_DIR$/_resources/fop-substitutions.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/_resources/jaxb.properties.MOXy" afterPath="$PROJECT_DIR$/_resources/jaxb.properties.MOXy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/_resources/log4j.dtd" afterPath="$PROJECT_DIR$/_resources/log4j.dtd" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/_resources/log4j.out.xml" afterPath="$PROJECT_DIR$/_resources/log4j.out.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/_resources/log4j.xml" afterPath="$PROJECT_DIR$/_resources/log4j.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/docx4j-3.2.1.jar" afterPath="$PROJECT_DIR$/docx4j-3.2.1.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/src/createDocuments/ImageManipulation.java" afterPath="$PROJECT_DIR$/src/createDocuments/ImageManipulation.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/src/createDocuments/Site2Report.java" afterPath="$PROJECT_DIR$/src/createDocuments/Site2Report.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/src/createDocuments/XMLInjector.java" afterPath="$PROJECT_DIR$/src/createDocuments/XMLInjector.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/src/createDocuments/XMLParser.java" afterPath="$PROJECT_DIR$/src/createDocuments/XMLParser.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../SICreateDocuments/src/createDocuments/XMLReporter.java" afterPath="$PROJECT_DIR$/src/createDocuments/XMLReporter.java" />
+    </list>
+    <ignored path="RBICreateDocuments.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/bin/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="RBICreateDocuments" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="XMLReporter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/createDocuments/XMLReporter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="596">
+              <caret line="201" column="9" selection-start-line="201" selection-start-column="9" selection-end-line="201" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XMLInjector.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/createDocuments/XMLInjector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/createDocuments/XMLReporter.java" />
+        <option value="$PROJECT_DIR$/src/createDocuments/XMLInjector.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1604" />
+    <option name="height" value="904" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RBICreateDocuments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RBICreateDocuments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RBICreateDocuments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RBICreateDocuments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RBICreateDocuments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="createDocuments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Application.XMLInjector">
+    <configuration default="false" name="XMLInjector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="createDocuments.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="createDocuments.XMLInjector" />
+      <option name="VM_PARAMETERS" value="-Xmx5120m" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;submission.mog&quot; &quot;c:/rbi-data/merge/&quot; 1" />
+      <option name="WORKING_DIRECTORY" value="file://c:/rbi-data/merge/uuid-mono-lattice-M15/" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="RBICreateDocuments" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="false" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="RBICreateDocuments" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.XMLInjector" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.XMLInjector" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb45b94d-4688-4c9b-b06e-581a311f25d8" name="Default" comment="" />
+      <created>1443020813858</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1443020813858</updated>
+      <workItem from="1443020838944" duration="466000" />
+      <workItem from="1443021315415" duration="174000" />
+      <workItem from="1443731835781" duration="60000" />
+      <workItem from="1450546844487" duration="70000" />
+      <workItem from="1453749638234" duration="140000" />
+      <workItem from="1453750041662" duration="400000" />
+      <workItem from="1453750599898" duration="132000" />
+      <workItem from="1459637258091" duration="315000" />
+      <workItem from="1461360560303" duration="1184000" />
+      <workItem from="1461622032601" duration="1329000" />
+    </task>
+    <task id="LOCAL-00001" summary="Commiting from IDEA">
+      <created>1461361830557</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1461361830557</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4270000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1604" height="904" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299748" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25314862" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299748" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commiting from IDEA" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commiting from IDEA" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/createDocuments/XMLReporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createDocuments/XMLInjector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createDocuments/XMLReporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createDocuments/XMLInjector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createDocuments/XMLReporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createDocuments/XMLInjector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createDocuments/XMLReporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createDocuments/XMLInjector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createDocuments/XMLReporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createDocuments/XMLParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/docx4j-3.2.1.jar!/com/topologi/diffx/Docx4jDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/docx4j-3.2.1.jar!/com/topologi/diffx/util/CommandLine.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createDocuments/XMLReporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="201" column="9" selection-start-line="201" selection-start-column="9" selection-end-line="201" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createDocuments/XMLInjector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

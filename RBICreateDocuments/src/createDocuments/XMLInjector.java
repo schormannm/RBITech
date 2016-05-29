@@ -22,69 +22,136 @@ import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+import org.apache.commons.cli.CommandLine;
+import org.apache.commons.cli.CommandLineParser;
+import org.apache.commons.cli.DefaultParser;
+import org.apache.commons.cli.HelpFormatter;
+import org.apache.commons.cli.Option;
+import org.apache.commons.cli.Options;
+import org.apache.commons.cli.ParseException;
 import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.lang.StringUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+// -------
 //
 // This program takes a directory containing a file called submission.xml and then a sea of .jpg files that
 // the .xml file refers to.  It generates an output file containing the original submission.xml
 // with all references to the .jpg files replaced with Base64 encoded byte arrays of the images.
 //
+// -------
 
 public class XMLInjector
 	{
+	private static final String	PROGRAM		= "XMLInjector";
+	private static final String	USAGE		= PROGRAM + " [Options] ";
+	private static final String	DESCRIPTION	= "    or " + PROGRAM + " [Options] \n \n.\n" + "Options:";
+	private static final String	EXAMPLE		= "\neg. " + PROGRAM + "  -i=submission.mog  -o='c:/data/' ";
 
 	public static void main(String[] args) throws Exception
 		{
-		String input_filename;
-		String outpath;
-		Boolean input_file_exists;
-		Boolean outpath_exists;
 
-		if (args.length < 2)
+		try
 			{
-			System.out.println("Number of arguments detected on command line is incorrect : " + args.length);
-			show_usage();
-			}
-		else
-			{
-			String input_path;
-			String mog_active;
-			String mog_path = "";
+			Option helpOption = Option.builder("h").longOpt("help").required(false).desc("shows this message").build();
+			Option inputOption = Option.builder("i").longOpt("input").hasArg().argName("inputfile").required(false)
+					.desc("input file").build();
+			Option outputOption = Option.builder("o").longOpt("output").hasArg().argName("outputpath").required(false)
+					.desc("output path").build();
+			Option configOption = Option.builder("c").longOpt("config").hasArg().argName("configfile").required(false)
+					.desc("config file").build();
+			Option mogActive = Option.builder("m").longOpt("mogactive").required(false).desc("trasmogrifier active").build();
 
-			input_filename = args[0];
-			outpath = args[1];
+			final CommandLineParser parser = new DefaultParser();
+			final Options options = new Options();
 
-			String current = System.getProperty("user.dir");
-			if (args.length == 3)
+			options.addOption(inputOption);
+			options.addOption(outputOption);
+			options.addOption(configOption);
+			options.addOption(mogActive);
+			options.addOption(helpOption);
+
+			final CommandLine commandLine = parser.parse(options, args);
+
+			if (commandLine.hasOption("help"))
 				{
-				mog_active = args[2];
-				mog_path = current + "/mog/";
+				show_usage(options);
+				return;
 				}
-			else
-				mog_path = current;
 
-			System.out.println(mog_path);
-			input_path = mog_path + input_filename;
-			input_file_exists = check_file_exists(input_path);
-
-			outpath_exists = check_path_exists(outpath);
-			if (!outpath_exists)
-				System.out.println("Output path does not exist " + outpath);
-
-			if (input_file_exists && outpath_exists)
+			if (commandLine.hasOption("input") && commandLine.hasOption("output"))
 				{
+				String input_path;
+				String mog_path = "";
+
+				final String input_filename = getOption('i', commandLine);
+				final String outpath = getOption('o', commandLine);
+
+				System.out.println(input_filename + "" + outpath);
+
+				String current = System.getProperty("user.dir");
+				if (commandLine.hasOption("mogactive"))
+					mog_path = current + "/mog/";
+				else
+					mog_path = current;
+
+				System.out.println(mog_path);
+				input_path = mog_path + input_filename;
+
+				Boolean input_file_exists = check_file_exists(input_path);
+				Boolean outpath_exists = check_path_exists(outpath);
+
+				if (!input_file_exists)
+					{
+					System.out.println("Error - input file missing : " + input_path);
+					System.out.println("Program did not run successfully");
+					return;
+					}
+
+				if (!outpath_exists)
+					{
+					System.out.println("Output path does not exist " + outpath);
+					System.out.println("Program did not run successfully");
+					return;
+					}
+
 				process_files(input_path, outpath);
 				System.out.println("Program successfully completed.");
+
 				}
 			else
 				{
-				System.out.println("Program did not run successfully - error in arguments.");
+				System.out.println("Error in arguments.  Input file and output directory must be specified");
+				show_usage(options);
 				}
+
 			}
+		catch (ParseException e)
+			{
+			System.err.println(PROGRAM + ": " + e.getMessage());
+			System.err.println("Try `" + PROGRAM + " --help' for more information.");
+			System.exit(1);
+			}
+		catch (Exception e)
+			{
+			System.err.println(PROGRAM + ": " + e.getMessage());
+			System.exit(1);
+			}
+
+		}
+
+	public static String getOption(final char option, final CommandLine commandLine)
+		{
+
+		if (commandLine.hasOption(option))
+			{
+			return commandLine.getOptionValue(option);
+			}
+
+		return StringUtils.EMPTY;
 		}
 
 	private static Boolean check_file_exists(String filePathString)
@@ -121,9 +188,10 @@ public class XMLInjector
 		return file_exists;
 		}
 
-	private static void show_usage()
+	private static void show_usage(Options options)
 		{
-		System.out.println("Usage: XMLInjector <XML_input_filename> <output_path>");
+		HelpFormatter formatter = new HelpFormatter();
+		formatter.printHelp(USAGE, DESCRIPTION, options, EXAMPLE);
 		}
 
 	public static void process_files(String filename, String outpath) throws Exception
@@ -204,20 +272,15 @@ public class XMLInjector
 
 	private static String getOutPutFileName(Document doc)
 		{
-		String output_filename;
-		String site_name;
-		String site_number;
-		String region;
-		String inspect_date;
-		String type;
 
-		site_name = doc.getElementsByTagName("site_name").item(0).getTextContent();
-		site_number = doc.getElementsByTagName("site_number").item(0).getTextContent();
-		region = doc.getElementsByTagName("region").item(0).getTextContent().toUpperCase();
-		inspect_date = doc.getElementsByTagName("date_of_inspection").item(0).getTextContent();
-		type = doc.getElementsByTagName("tower_type").item(0).getTextContent();
+		String region = doc.getElementsByTagName("region").item(0).getTextContent(); // removed the .toUpper() on this
+		String site_name = doc.getElementsByTagName("site_name").item(0).getTextContent();
+		String site_number = doc.getElementsByTagName("site_number").item(0).getTextContent();
+		String inspect_date = doc.getElementsByTagName("date_of_inspection").item(0).getTextContent();
+		// String type = doc.getElementsByTagName("tower_type").item(0).getTextContent();
+		String type = "1";
 
-		output_filename = region + "_" + site_name + "_" + site_number + "_" + inspect_date + "_VC_PSEIA_" + type;
+		String output_filename = region + "_" + site_name + "_" + site_number + "_" + inspect_date + "_VC_PSEIA_" + type;
 		output_filename = cleanString(output_filename);
 
 		System.out.println("Outputfilename : " + output_filename);
@@ -230,6 +293,7 @@ public class XMLInjector
 
 		clean_string = site_name.replace(" ", "_");
 		clean_string = clean_string.replace(".", "_");
+		clean_string = clean_string.replace("\\", "-");
 
 		return clean_string;
 		}
